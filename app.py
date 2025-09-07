@@ -149,8 +149,8 @@ def checkout():
                 'quantity': 1,
             }],
             mode='payment',
-            success_url=request.host_url + 'success?status=success',
-            cancel_url=request.host_url + 'success?status=fail',
+            success_url="https://mbti-flask-5yrr.onrender.com/success?status=success",
+            cancel_url="https://mbti-flask-5yrr.onrender.com/success?status=fail",
         )
     except Exception as e:
         return str(e)
@@ -240,4 +240,5 @@ def success():
 
 if __name__=="__main__":
     app.run(debug=True)
+
 
