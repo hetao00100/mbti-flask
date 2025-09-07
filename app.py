@@ -156,35 +156,19 @@ def checkout():
     except Exception as e:
         return str(e)
 
-    # PayPay 测试二维码支付 (沙箱)
-    paypay_order_id = str(uuid.uuid4())
-    paypay_payload = {
-        "merchantPaymentId": paypay_order_id,
-        "amount": {"amount": 1000, "currency": "JPY"},
-        "codeType": "ORDER_QR",
-        "orderDescription": "MBTI Test",
-    }
-    # 仅生成二维码，不调用生产接口
-    qr_url = f"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=MBTI+Test+PayPay+{paypay_order_id}"
-
     
     html = f"""
     {BASE_CSS_JS}
     <div class="card">
         <h2>{text['checkout_title']}</h2>
-
-        <h3>Stripe 信用卡支付（测试）</h3>
+        <h3>Stripe 信用卡支付</h3>
         <p>{text['checkout_desc_stripe'].format(amount=1000)}</p>
         <a href="{session_stripe.url}"><button>{text['checkout_btn_stripe']}</button></a>
-
-        <h3>PayPay 沙箱支付（测试）</h3>
-        <p>{text['checkout_desc_paypay'].format(amount=1000)}</p>
-        <img src="{qr_url}" alt="PayPay QR Code"/>
-
         <p style="margin-top:20px;"><a href="{url_for('quiz')}">{text['checkout_back_quiz']}</a></p>
     </div>
     """
     return render_template_string(html)
+    
     
 
 # 结果页
@@ -258,3 +242,4 @@ def success():
 
 if __name__=="__main__":
     app.run(debug=True)
+
