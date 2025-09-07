@@ -10,8 +10,7 @@ load_dotenv()  # 读取 .env
 
 STRIPE_PUBLIC_KEY = os.getenv("STRIPE_PUBLIC_KEY")
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
-PAYPAY_MERCHANT_ID = os.getenv("PAYPAY_MERCHANT_ID")
-PAYPAY_MERCHANT_SECRET = os.getenv("PAYPAY_MERCHANT_SECRET")
+
 
 stripe.api_key = STRIPE_SECRET_KEY
 if not STRIPE_SECRET_KEY:
@@ -168,7 +167,6 @@ def checkout():
     </div>
     """
     return render_template_string(html)
-    
     
 
 # 结果页
