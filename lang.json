@@ -1,0 +1,734 @@
+{
+  "zh": {
+    "start_title":"欢迎参加人格测试",
+    "start_desc":"本测试共有 {total} 道题目，每道题目都有 4 个选项。",
+    "start_btn":"开始测试",
+    "quiz_title":"人格测试",
+    "quiz_progress":"题目 {current} / {total}",
+    "checkout_desc":"请扫描二维码付款 (模拟)",
+    "checkout_btn":"我已付款",
+    "success_title":"支付成功 ✅",
+    "success_type":"你的 MBTI 类型是：{result}",
+    "success_btn":"重新测试",
+    "starting":"准备开始",
+    "payment_failed_title": "支付未成功 ❌",
+    "payment_failed_desc": "请重试或使用其他支付方式。",
+    "payment_failed_btn": "返回支付",
+    "checkout_title": "选择支付方式",
+    "checkout_credit": "Stripe 信用卡支付测试",
+    "checkout_paypay": "PayPay 沙箱支付测试",
+    "checkout_amount": "扫码支付金额 {amount} JPY",
+    "checkout_card_btn": "使用信用卡支付",
+    "checkout_desc_stripe": "使用信用卡支付金额 {amount} JPY",
+    "checkout_btn_stripe": "使用信用卡支付",
+    "checkout_desc_paypay": "扫码支付金额 {amount} JPY",
+    "checkout_back_quiz": "返回题目",
+    "questions":[
+    {
+      "q": "放学后发现作业没写完，你会怎么做？",
+      "options": {
+        "乖乖回家写完": "J",
+        "拖到睡前再敷衍完成": "P",
+        "边走边幻想作业自己写完": "N",
+        "直接召唤作业机器人": "S"
+      }
+    },
+    {
+      "q": "同事/同学约你去奇怪的活动，你会如何反应？",
+      "options": {
+        "先想想是否符合计划": "J",
+        "直接爽约或临时决定": "P",
+        "脑补活动可能的各种剧情": "N",
+        "观察现场氛围再行动": "S"
+      }
+    },
+    {
+      "q": "你的房间突然多出一只会说话的猫，你会？",
+      "options": {
+        "问清楚它的身份和目的": "T",
+        "先感受它萌不萌再决定": "F",
+        "想象它其实是你未来的化身": "N",
+        "默默继续原来的生活": "S"
+      }
+    },
+    {
+      "q": "早上闹钟响了三次，你的反应是？",
+      "options": {
+        "按计划起床不拖延": "J",
+        "赖床再设一次闹钟": "P",
+        "幻想闹钟会被时间暂停": "N",
+        "直接顺便做梦冒险": "S"
+      }
+    },
+    {
+      "q": "突然得到一张神秘门票，你会？",
+      "options": {
+        "查攻略、安排好行程": "J",
+        "随意出发，随缘体验": "P",
+        "幻想门票背后隐藏异世界": "N",
+        "先看看周围人反应再决定": "S"
+      }
+    },
+    {
+      "q": "你发现自己能听懂植物说话，你会？",
+      "options": {
+        "记录它们的需求，科学分析": "T",
+        "安慰它们，顺便讲讲心里话": "F",
+        "幻想植物其实是外星情报员": "N",
+        "继续做自己的事，偶尔偷听": "S"
+      }
+    },
+    {
+      "q": "翻译软件翻错日文，你会？",
+      "options": {
+        "查字典、纠正翻译": "J",
+        "随便读，顺其自然": "P",
+        "自创搞笑翻译版本": "N",
+        "理解大意就好，不纠结": "S"
+      }
+    },
+    {
+      "q": "下班/放学路上突然刮起奇怪风，你会？",
+      "options": {
+        "赶紧回家，不冒险": "J",
+        "享受风吹，随机决定路线": "P",
+        "幻想风里有未知生物在玩耍": "N",
+        "直接融入风中，自由漂流": "S"
+      }
+    },
+    {
+      "q": "桌上出现一个神秘按钮，你会按吗？",
+      "options": {
+        "先想好后果再决定": "J",
+        "好奇心驱使立刻按": "P",
+        "幻想按钮能改写世界": "N",
+        "观察别人按不按再行动": "S"
+      }
+    },
+    {
+      "q": "朋友邀请你参加午夜线上狼人杀，你会？",
+      "options": {
+        "提前排兵布阵，心中有数": "J",
+        "随缘玩，随机策略": "P",
+        "幻想自己真的是狼人": "N",
+        "顺便观察队友行为": "S"
+      }
+    },
+    {
+      "q": "咖啡店推出奇怪口味限量饮料，你会？",
+      "options": {
+        "看评价决定是否尝试": "J",
+        "冲动买一杯尝试": "P",
+        "想象饮料会带来奇幻能力": "N",
+        "先嗅嗅味道再决定": "S"
+      }
+    },
+    {
+      "q": "梦到自己变成巨型章鱼，你的第一反应？",
+      "options": {
+        "记录梦境，分析象征意义": "T",
+        "感受梦境，享受章鱼生活": "F",
+        "幻想自己能征服海底世界": "N",
+        "梦里继续做平常事情": "S"
+      }
+    },
+    {
+      "q": "收到一条神秘快递，里面全是橡皮鸭，你会？",
+      "options": {
+        "整理分类，研究来源": "J",
+        "随意摆放，享受乐趣": "P",
+        "想象鸭子背后隐藏的秘密组织": "N",
+        "放在桌上，偶尔拍照发朋友圈": "S"
+      }
+    },
+    {
+      "q": "地铁里有人演奏怪异乐器，你会？",
+      "options": {
+        "认真听，分析技巧": "T",
+        "随心感受，跟着节奏": "F",
+        "幻想演奏者是来自平行宇宙": "N",
+        "路过一边，顺便打个节拍": "S"
+      }
+    },
+    {
+      "q": "手机突然出现一个提示“你可以穿越时间”，你会？",
+      "options": {
+        "制定周密计划，计算影响": "J",
+        "随意尝试，看看会发生什么": "P",
+        "幻想自己在未来世界的奇遇": "N",
+        "继续刷手机，不理会提示": "S"
+      }
+    },
+    {
+      "q": "校园/办公室里出现迷你龙卷风，你会？",
+      "options": {
+        "提醒大家按安全流程撤离": "J",
+        "顺势玩耍，看谁被卷起来": "P",
+        "幻想这是外星生物在探险": "N",
+        "观察风的路径，避开就好": "S"
+      }
+    },
+    {
+      "q": "桌子上出现一台会说话的打印机，你会？",
+      "options": {
+        "问清楚打印机想打印什么": "T",
+        "先关心打印机的感受": "F",
+        "幻想打印机是未来人工智能": "N",
+        "继续打印自己的东西，不理会": "S"
+      }
+    },
+    {
+      "q": "如果你可以控制天气，你会？",
+      "options": {
+        "制定计划，调节工作学习天气": "J",
+        "随机变换天气，看心情": "P",
+        "幻想天气带来奇幻冒险": "N",
+        "随风而动，体验天气变化": "S"
+      }
+    },
+    {
+      "q": "图书馆里突然出现一个传送门，你会？",
+      "options": {
+        "分析风险，决定是否进入": "J",
+        "冲动进去看看": "P",
+        "幻想进入的世界比现实精彩": "N",
+        "观察其他人动作再决定": "S"
+      }
+    },
+    {
+      "q": "深夜发现房间里的家具开始跳舞，你会？",
+      "options": {
+        "整理家具，恢复秩序": "J",
+        "一起跳舞，享受奇趣": "P",
+        "幻想家具在表演古老仪式": "N",
+        "默默看它们跳，自己继续做事": "S"
+      }
+    }
+    ],
+    "results":{
+        
+          "ISTJ": "ISTJ – 认真执行者\nISTJ的人生信条大概是：“规矩就是生命”。你们就像生活里的闹钟，无论多晚，多乱，总能准时、稳妥地把事情做好。别人可能觉得你们板着脸，其实你们心里有条不紊，暗暗把世界整理得井井有条。\n\n表面上严肃，其实内心很重感情，只是表达方式像严谨的说明书。朋友们看到你们像个靠谱铁人，但你们其实也会偷偷欣赏小幽默和温暖的瞬间。\n\n恋爱里，ISTJ稳重可靠，你会为另一半记得每一个小约定、每一次重要日程，哪怕对方没说出口。 \n\n优点：可靠、负责、组织力强。缺点：有时候太死板，不太懂变通。\n\n一句话总结：ISTJ是生活里的“靠谱铁人”，把秩序和规则默默维护到位。",
+
+          "ISFJ": "ISFJ – 温柔守护者\nISFJ的人生信条大概是：“别人开心，我就开心”。你们就像生活里的小太阳，总是在暗暗记住每个人的喜好、生日和零食偏好，默默为大家制造小惊喜。别人可能不知道，你们已经在背后为团队整理好每一个细节，把混乱变成秩序。\n\n表面上柔弱，其实心里很有原则：不会随便妥协，但尽量不让冲突伤到别人。朋友们看你们像暖心护士，但你们也有“雷区”，一旦被冒犯，可能会默默拉黑——不是报复，只是保护自己的和平。\n\n恋爱里，ISFJ温柔又细心，你会记得对方喜欢的咖啡温度、抱枕位置，哪怕小事也能让另一半觉得“太贴心了”。\n\n优点：细心、体贴、靠谱。缺点：容易委屈自己，不太敢开口要求。\n\n一句话总结：ISFJ就是生活里的“暖心小棉袄”，默默守护世界的秩序。",
+
+          "INFJ": "INFJ – 神秘梦想家\nINFJ的人生信条大概是：“想象力才是武器”。你们像在暗夜里点亮小灯的巫师，总能看到别人看不到的情绪波动和隐藏需求。别人觉得你们神秘，其实你们早就悄悄在计划世界的小惊喜。\n\n内心戏超级丰富，能把生活的每一秒都编成故事，有时候连自己都沉浸其中。朋友觉得你们像心理医生，但你们也需要自己的独处时间来充电。\n\n恋爱里，INFJ深情又细腻，会为另一半写无数小纸条、策划惊喜，但不会轻易表露自己脆弱的一面。\n\n优点：洞察力强、有同理心、善于规划。缺点：偶尔太理想化，容易疲惫。\n\n一句话总结：INFJ是生活里的“神秘策划师”，用洞察和温柔编织现实里的小魔法。",
+
+          "INTJ": "INTJ – 战略策划者\nINTJ的人生信条大概是：“计划比运气重要”。你们像战术棋盘上的大师，总能预判几步之外的情况。别人觉得你们冷漠，其实你们只是专注在自己的宏大蓝图上，不喜欢浪费时间在琐事上。\n\n生活里，你们是自己世界的掌控者，喜欢效率和逻辑。朋友觉得你们难懂，其实你们只是不愿随便分享内心世界。\n\n恋爱里，INTJ理智又深情，会默默关注另一半的成长和需求，用行动胜过言语。\n\n优点：逻辑强、目标明确、独立。缺点：社交冷淡，偶尔不够灵活。\n\n一句话总结：INTJ是生活里的“战略大师”，用理智和计划掌控生活全局。",
+
+          "ISTP": "ISTP – 独行冒险家\nISTP的人生信条大概是：“动手比动口快”。你们像生活里的修理工，遇到问题喜欢自己搞定，而不是听别人唠叨。别人觉得你们冷静，其实你们热爱自由和新奇体验。\n\n喜欢尝试各种操作和挑战，随遇而安，随手就能解决复杂问题。朋友觉得你们神秘又酷，其实你们只是低调享受当下。\n\n恋爱里，ISTP直接又有趣，会带另一半一起体验冒险，但不喜欢过多情绪戏。\n\n优点：动手能力强、冷静、随性。缺点：情感表达少，容易被误解。\n\n一句话总结：ISTP是生活里的“低调冒险家”，用行动而非言语玩转世界。",
+
+          "ISFP": "ISFP – 自由艺术家\nISFP的人生信条大概是：“生活就是一幅画”。你们像行走的画布，总能把普通日子变得有趣又美好。别人觉得你们温柔，其实你们自由、随性，有自己的小宇宙。\n\n生活里，ISFP喜欢享受当下，哪怕只是泡一杯茶，也能自成仪式感。朋友们觉得你们可爱又神秘，你们只是忠于自己。\n\n恋爱里，ISFP细腻又浪漫，会用小动作表达关心，而不是大段表白。\n\n优点：富有艺术感、温柔、随性。缺点：不喜欢计划，容易拖延。\n\n一句话总结：ISFP是生活里的“浪漫行者”，让世界因自由和美好而动人。",
+
+          "INFP": "INFP – 理想主义者\nINFP的人生信条大概是：“世界应该更温柔”。你们像生活里的诗人，总在脑海里写无数故事和理想。别人觉得你们文艺，其实你们内心戏超级丰富，偶尔会沉迷幻想。\n\n生活里，INFP喜欢追求理想与真心，哪怕现实不完美，也不会轻易妥协。朋友觉得你们神秘又感性，你们只是用自己的方式感受世界。\n\n恋爱里，INFP浪漫且深情，会用文字、创意和小惊喜表达爱意。\n\n优点：善良、想象力丰富、有同理心。缺点：容易理想化，敏感。\n\n一句话总结：INFP是生活里的“温柔梦想家”，用理想和想象力温暖世界。",
+
+          "INTP": "INTP – 思辨哲学家\nINTP的人生信条大概是：“先想清楚再行动”。你们像生活里的逻辑侦探，总在分析一切，甚至连生活小事也不放过。别人觉得你们冷漠，其实你们只是沉浸在自己的思考世界。\n\n生活里，INTP喜欢探索理论和新奇想法，偶尔会忘记吃饭和睡觉。朋友觉得你们古怪又聪明，你们只是好奇心旺盛。\n\n恋爱里，INTP理性又幽默，会用巧思和创意打动另一半。\n\n优点：聪明、逻辑强、独立。缺点：情感表达少，容易拖延。\n\n一句话总结：INTP是生活里的“逻辑侦探”，用理性和创意探索世界。",
+
+          "ESTP": "ESTP – 活力行动派\nESTP的人生信条大概是：“快干快玩”。你们像生活里的派对发动机，总能带动气氛，让周围的人热血沸腾。别人觉得你们外向，其实你们热爱自由和刺激，讨厌拖沓。\n\n生活里，ESTP敢于冒险，喜欢当下行动，反应快且随机应变能力强。朋友觉得你们刺激又可靠，你们只是随性而活。\n\n恋爱里，ESTP直接又浪漫，会带另一半一起玩刺激活动，而不是空谈理论。\n\n优点：热情、行动力强、随机应变快。缺点：容易冲动，不够细致。\n\n一句话总结：ESTP是生活里的“冒险加速器”，让平凡日子燃起来。",
+
+          "ESFP": "ESFP – 欢乐表演者\nESFP的人生信条大概是：“生活要high起来”。你们像生活里的舞台明星，总能把普通时刻变成秀场。别人觉得你们活泼，其实你们敏锐，能察觉周围每个人的情绪。\n\n生活里，ESFP喜欢互动和热闹，总能带来笑声和惊喜。朋友们觉得你们可爱又迷人，你们只是享受当下。\n\n恋爱里，ESFP热情又浪漫，会用行动和表演吸引另一半。\n\n优点：热情、幽默、社交强。缺点：容易分心，缺乏耐心。\n\n一句话总结：ESFP是生活里的“快乐制造机”，让周围的人都开怀大笑。",
+
+          "ENFP": "ENFP – 热情探索者\nENFP的人生信条大概是：“世界值得冒险”。你们像生活里的探险家，总能发现新奇和乐趣。别人觉得你们多动，其实你们只是热爱尝试和连接。\n\n生活里，ENFP充满创意和好奇心，喜欢与人互动和讨论各种疯狂想法。朋友觉得你们幽默又有趣，你们只是心思活跃。\n\n恋爱里，ENFP浪漫又热情，会用创意和惊喜让另一半心跳加速。\n\n优点：热情、创意丰富、善于交际。缺点：容易分心，缺乏耐性。\n\n一句话总结：ENFP是生活里的“活力探索家”，用热情和创意点亮世界。",
+
+          "ENTP": "ENTP – 创意辩论家\nENTP的人生信条大概是：“辩论也是乐趣”。你们像生活里的创新火花，总能提出新点子，让人耳目一新。别人觉得你们机智，又有点挑衅，其实你们只是享受思维碰撞。\n\n生活里，ENTP充满好奇和幽默，总能把平淡事情变得有趣。朋友觉得你们聪明又古怪，你们只是追求刺激与新鲜感。\n\n恋爱里，ENTP聪明幽默，会用言语和创意抓住另一半的心。\n\n优点：机智、创意丰富、反应快。缺点：容易分心，不够稳定。\n\n一句话总结：ENTP是生活里的“创意火花”，用机智和幽默点燃生活。",
+
+          "ESTJ": "ESTJ – 组织管理者\nESTJ的人生信条大概是：“规则就是安全感”。你们像生活里的指挥官，总能把混乱变成秩序。别人觉得你们强势，其实你们只是喜欢效率和清楚的规则。\n\n生活里，ESTJ靠谱又有行动力，喜欢带领团队完成任务。朋友觉得你们严厉又可靠，你们只是希望事情顺利进行。\n\n恋爱里，ESTJ负责又直接，会帮另一半安排生活，让日常井然有序。\n\n优点：可靠、果断、有组织力。缺点：有时强势，不够灵活。\n\n一句话总结：ESTJ是生活里的“秩序指挥官”，用效率和规则让世界井然有序。",
+
+          "ESFJ": "ESFJ – 热心社交家\nESFJ的人生信条大概是：“大家开心，我就开心”。你们像生活里的温暖中心，总能察觉周围情绪，为大家制造欢乐。别人觉得你们活泼好相处，其实你们细心又有条理。\n\n生活里，ESFJ善于照顾人，总能安排好聚会和小惊喜。朋友觉得你们贴心又有趣，你们只是享受互动。\n\n恋爱里，ESFJ温柔体贴，会用行动和照顾让另一半感受到满满关怀。\n\n优点：热心、体贴、社交能力强。缺点：有时过于在意他人评价。\n\n一句话总结：ESFJ是生活里的“社交暖心包”，让每个人都感到被照顾。",
+
+          "ENFJ": "ENFJ – 魅力引导者\nENFJ的人生信条大概是：“影响世界从身边开始”。你们像生活里的灯塔，总能激励别人、带动气氛。别人觉得你们有领导力又温暖，其实你们细心观察每个人的情绪和需求。\n\n生活里，ENFJ擅长沟通和激励，总能让团队充满干劲。朋友觉得你们热情又有魅力，你们只是享受带动大家。\n\n恋爱里，ENFJ体贴又深情，会全力照顾另一半情绪和需求。\n\n优点：领导力强、善解人意、热情。缺点：容易操心别人，忽略自己。\n\n一句话总结：ENFJ是生活里的“魅力带头人”，用温暖和影响力照亮周围的人。",
+
+          "ENTJ": "ENTJ – 决策执行者\nENTJ的人生信条大概是：“目标明确，一切皆可达成”。你们像生活里的CEO，总能把想法变成行动，带领大家达成目标。别人觉得你们强势，其实你们只是效率至上，不喜欢浪费时间。\n\n生活里，ENTJ果断又有计划，总能推动项目顺利进行。朋友觉得你们有魄力又可靠，你们只是追求成功和效率。\n\n恋爱里，ENTJ理性而深情，会规划未来并确保两个人的目标一致。\n\n优点：果断、计划性强、领导力强。缺点：有时过于专注目标，忽略感情。\n\n一句话总结：ENTJ是生活里的“行动CEO”，用果断和规划掌控生活。"
+
+
+    }
+  },
+ "en": {
+    "start_title": "Welcome to the Personality Test",
+    "start_desc": "This test has {total} questions, each with 4 options.",
+    "start_btn": "Start Test",
+    "quiz_title": "Personality Test",
+    "quiz_progress": "Question {current} / {total}",
+    "checkout_desc": "Please scan the QR code to pay (simulation)",
+    "checkout_btn": "I have paid",
+    "success_title": "Payment Successful ✅",
+    "success_type": "Your MBTI type is: {result}",
+    "success_btn": "Retake Test",
+    "starting": "Starting in",
+    "payment_failed_title": "Payment Failed ❌",
+    "payment_failed_desc": "Please try again or use another payment method.",
+    "payment_failed_btn": "Back to Payment",
+    "checkout_title": "Choose Payment Method",
+    "checkout_credit": "Stripe Credit Card Test",
+    "checkout_paypay": "PayPay Sandbox Test",
+    "checkout_amount": "Scan to pay {amount} JPY (sample QR code)",
+    "checkout_card_btn": "Pay with Credit Card",
+    "checkout_desc_stripe": "Pay {amount} JPY with Credit Card",
+    "checkout_btn_stripe": "Pay with Credit Card",
+    "checkout_desc_paypay": "Scan QR to pay {amount} JPY via PayPay",
+    "checkout_back_quiz": "Back to Quiz",
+    "questions": [
+    {
+      "q": "After school/work, you realize your homework/tasks aren’t done. What do you do?",
+      "options": {
+        "Go home and finish it properly": "J",
+        "Procrastinate until the last minute": "P",
+        "Imagine the homework magically finishing itself": "N",
+        "Summon a homework-solving robot": "S"
+      }
+    },
+    {
+      "q": "Your friends/colleagues invite you to a weird event. How do you react?",
+      "options": {
+        "Check the plan carefully before going": "J",
+        "Decide on the spot and join for fun": "P",
+        "Imagine all the secret drama behind the event": "N",
+        "See the vibe first, then decide": "S"
+      }
+    },
+    {
+      "q": "A talking cat suddenly appears in your room. What do you do?",
+      "options": {
+        "Ask its identity and purpose": "T",
+        "Feel the cuteness before deciding": "F",
+        "Imagine it’s your future self in disguise": "N",
+        "Carry on as usual": "S"
+      }
+    },
+    {
+      "q": "Your alarm rings three times in the morning. What do you do?",
+      "options": {
+        "Get up as scheduled": "J",
+        "Hit snooze for a bit more sleep": "P",
+        "Imagine the alarm can stop time": "N",
+        "Continue dreaming your adventure": "S"
+      }
+    },
+    {
+      "q": "You get a mysterious ticket. What’s your move?",
+      "options": {
+        "Research and plan carefully": "J",
+        "Go randomly and enjoy the surprise": "P",
+        "Imagine it leads to a hidden parallel world": "N",
+        "Decide after seeing how others react": "S"
+      }
+    },
+    {
+      "q": "You suddenly hear plants talking. How do you react?",
+      "options": {
+        "Record and analyze scientifically": "T",
+        "Comfort them and share your feelings": "F",
+        "Imagine plants are alien spies": "N",
+        "Go about your day, occasionally listening": "S"
+      }
+    },
+    {
+      "q": "Your translation app mistranslates something. How do you respond?",
+      "options": {
+        "Check the dictionary and correct it": "J",
+        "Ignore it and move on": "P",
+        "Create a fun, alternative translation": "N",
+        "Understand the gist and leave it": "S"
+      }
+    },
+    {
+      "q": "After school/work, a strange wind blows. What do you do?",
+      "options": {
+        "Go home immediately": "J",
+        "Enjoy the wind and choose a random route": "P",
+        "Imagine a mysterious creature riding the wind": "N",
+        "Float along freely with the breeze": "S"
+      }
+    },
+    {
+      "q": "A mysterious button appears on your desk. What’s your move?",
+      "options": {
+        "Think carefully before pressing": "J",
+        "Press immediately out of curiosity": "P",
+        "Imagine it will change the world": "N",
+        "Observe others and decide": "S"
+      }
+    },
+    {
+      "q": "Invited to a midnight online Werewolf game. What do you do?",
+      "options": {
+        "Plan your strategy in advance": "J",
+        "Play spontaneously for fun": "P",
+        "Imagine you are really a werewolf": "N",
+        "Observe teammates’ actions": "S"
+      }
+    },
+    {
+      "q": "A café serves a weird limited-time drink. How do you respond?",
+      "options": {
+        "Check reviews before trying": "J",
+        "Buy it on impulse": "P",
+        "Imagine it gives you mysterious powers": "N",
+        "Smell it first and decide": "S"
+      }
+    },
+    {
+      "q": "You dream of becoming a giant octopus. What do you do?",
+      "options": {
+        "Record and analyze the dream": "T",
+        "Enjoy the dream": "F",
+        "Imagine conquering the underwater world": "N",
+        "Act normal in the dream": "S"
+      }
+    },
+    {
+      "q": "A mysterious delivery arrives, full of rubber ducks. How do you react?",
+      "options": {
+        "Organize and check the source": "J",
+        "Put them around for fun": "P",
+        "Imagine a secret organization is behind it": "N",
+        "Take photos and leave them on your desk": "S"
+      }
+    },
+    {
+      "q": "Someone plays a weird instrument on the subway. How do you react?",
+      "options": {
+        "Listen seriously and analyze": "T",
+        "Enjoy it casually": "F",
+        "Imagine the player came from a parallel world": "N",
+        "Follow the rhythm as you pass by": "S"
+      }
+    },
+    {
+      "q": "Your phone says 'You can control time.' How do you react?",
+      "options": {
+        "Plan carefully": "J",
+        "Experiment randomly": "P",
+        "Imagine going on adventures in a future world": "N",
+        "Ignore and keep using your phone": "S"
+      }
+    },
+    {
+      "q": "A mini tornado appears in your school/office. What do you do?",
+      "options": {
+        "Safely evacuate everyone": "J",
+        "Play with the wind": "P",
+        "Imagine aliens exploring": "N",
+        "Observe the wind and dodge it": "S"
+      }
+    },
+    {
+      "q": "A talking printer appears on your desk. What do you do?",
+      "options": {
+        "Ask what it wants to print": "T",
+        "Consider the printer’s feelings": "F",
+        "Imagine it’s a futuristic AI": "N",
+        "Keep printing as usual": "S"
+      }
+    },
+    {
+      "q": "If you could control the weather, what would you do?",
+      "options": {
+        "Adjust it according to work/study": "J",
+        "Change it freely for fun": "P",
+        "Imagine the weather creating wild adventures": "N",
+        "Experience it as it comes": "S"
+      }
+    },
+    {
+      "q": "A warp gate suddenly appears in the library. What do you do?",
+      "options": {
+        "Analyze risk before deciding": "J",
+        "Jump in on impulse": "P",
+        "Imagine a world more fun than reality": "N",
+        "Wait and watch what others do": "S"
+      }
+    },
+    {
+      "q": "At night, furniture suddenly starts dancing. How do you react?",
+      "options": {
+        "Tidy up to restore order": "J",
+        "Dance along for fun": "P",
+        "Imagine it’s an ancient ritual": "N",
+        "Watch quietly while continuing work": "S"
+      }
+    }
+    ],
+    "results": {
+    
+  "ISTJ": "ISTJ – The Responsible Executor\nISTJs live by the motto: 'Rules are life.' You are like a human alarm clock, always punctual and reliable. People may think you are serious, but inside, you silently organize the world.\n\nOn the surface, you seem stern, but your feelings are deep. Friends see you as reliable, while you secretly enjoy humor and warmth.\n\nIn love, ISTJs are stable and attentive, remembering every little promise. \n\nStrengths: reliable, responsible, organized. Weaknesses: rigid, sometimes inflexible.\n\nOne-line: ISTJ is the 'reliable iron man' of life, silently keeping order.",
+
+  "ISFJ": "ISFJ – The Gentle Guardian\nISFJs live by: 'Others happy, I’m happy.' You are like a small sun, remembering everyone's likes, birthdays, and snack preferences, creating little surprises.\n\nYou follow principles quietly and avoid conflicts. Friends see you as a warm-hearted nurse, but you have boundaries to protect your peace.\n\nIn love, ISFJs are thoughtful, remembering small preferences to make their partner feel cared for.\n\nStrengths: attentive, caring, reliable. Weaknesses: self-sacrificing, hesitant to ask.\n\nOne-line: ISFJ is the 'warm little blanket' quietly guarding the world.",
+
+  "INFJ": "INFJ – The Mysterious Dreamer\nINFJs believe: 'Imagination is my weapon.' You are like a wizard lighting up the dark, noticing what others cannot.\n\nRich inner world, life feels like a story. Friends see you as a counselor, but you need solitude.\n\nIn love, INFJs are deeply caring, planning surprises silently.\n\nStrengths: insightful, empathetic, strategic. Weaknesses: idealistic, easily exhausted.\n\nOne-line: INFJ is the 'mysterious planner', weaving magic with insight and kindness.",
+
+  "INTJ": "INTJ – The Strategic Mastermind\nINTJs live by: 'Plans matter more than luck.' You are a chess master, predicting moves ahead. People see you as cold, but you are focused on your grand blueprint.\n\nIndependent and efficient, friends may find you hard to approach.\n\nIn love, INTJs are thoughtful and attentive, showing care through actions.\n\nStrengths: logical, goal-oriented, independent. Weaknesses: socially distant, inflexible.\n\nOne-line: INTJ is the 'strategic master', controlling life with logic and plans.",
+
+  "ISTP": "ISTP – The Independent Adventurer\nISTPs live by: 'Action beats words.' You are a problem solver, fixing things instead of talking. People see you as calm, but you love freedom and novelty.\n\nPractical and adaptable, friends see you as mysterious yet cool.\n\nIn love, ISTPs are fun and direct, sharing adventures with their partner.\n\nStrengths: hands-on, calm, flexible. Weaknesses: reserved emotionally, easily misunderstood.\n\nOne-line: ISTP is the 'low-key adventurer', mastering the world through action.",
+
+  "ISFP": "ISFP – The Free Artist\nISFPs believe: 'Life is a canvas.' You can make ordinary days beautiful. People see you as gentle, but you are free-spirited with a small universe inside.\n\nYou enjoy the moment; friends see you as cute and mysterious.\n\nIn love, ISFPs show care through subtle gestures, not long speeches.\n\nStrengths: artistic, gentle, spontaneous. Weaknesses: dislike planning, prone to procrastination.\n\nOne-line: ISFP is the 'romantic wanderer', coloring the world with beauty and freedom.",
+
+  "INFP": "INFP – The Idealist\nINFPs live by: 'The world should be gentle.' You are a poet, with endless stories in your mind. People see you as artistic; you immerse in fantasies.\n\nYou pursue ideals and truth, friends find you mysterious.\n\nIn love, INFPs are romantic and express affection through creativity.\n\nStrengths: kind, imaginative, empathetic. Weaknesses: idealistic, sensitive.\n\nOne-line: INFP is the 'gentle dreamer', warming the world with imagination.",
+
+  "INTP": "INTP – The Analytical Philosopher\nINTPs live by: 'Think first, act later.' You analyze everything, even trivial matters. People see you as cold, but you are absorbed in thought.\n\nCurious and creative, friends find you quirky and smart.\n\nIn love, INTPs are clever and witty, using ideas to charm.\n\nStrengths: intelligent, logical, independent. Weaknesses: poor emotional expression, procrastination.\n\nOne-line: INTP is the 'logic detective', exploring the world with reason and creativity.",
+
+  "ESTP": "ESTP – The Energetic Doer\nESTPs live by: 'Act fast, live fast.' You are a party engine, energizing everyone. People see you as outgoing; you love freedom and excitement.\n\nBold and adaptable, friends see you as fun and reliable.\n\nIn love, ESTPs are direct and adventurous, bringing thrill to their partner.\n\nStrengths: energetic, proactive, adaptable. Weaknesses: impulsive, not detail-oriented.\n\nOne-line: ESTP is the 'adventure accelerator', igniting ordinary days.",
+
+  "ESFP": "ESFP – The Joyful Performer\nESFPs believe: 'Life should be fun.' You turn ordinary moments into a show. People see you as lively; you sense everyone's emotions keenly.\n\nInteractive and cheerful, friends find you adorable.\n\nIn love, ESFPs are passionate and show love through actions.\n\nStrengths: enthusiastic, humorous, social. Weaknesses: easily distracted, impatient.\n\nOne-line: ESFP is the 'happiness generator', spreading laughter everywhere.",
+
+  "ENFP": "ENFP – The Passionate Explorer\nENFPs live by: 'The world is worth exploring.' You discover fun and novelty. People see you as energetic; you love trying and connecting.\n\nCreative and curious, friends find you humorous.\n\nIn love, ENFPs are romantic, surprising their partner with creativity.\n\nStrengths: passionate, imaginative, social. Weaknesses: distracted, impatient.\n\nOne-line: ENFP is the 'vitality explorer', lighting up the world with passion.",
+
+  "ENTP": "ENTP – The Creative Debater\nENTPs live by: 'Debate is fun.' You spark new ideas, keeping things fresh. People see you as witty, slightly provocative, enjoying mental challenges.\n\nCurious and humorous, friends find you smart and quirky.\n\nIn love, ENTPs charm with words and creativity.\n\nStrengths: witty, creative, quick-thinking. Weaknesses: distracted, unstable.\n\nOne-line: ENTP is the 'creative spark', igniting life with humor and intelligence.",
+
+  "ESTJ": "ESTJ – The Organized Manager\nESTJs live by: 'Rules equal security.' You turn chaos into order. People see you as strong, but you just love efficiency and clarity.\n\nReliable and proactive, friends find you strict yet dependable.\n\nIn love, ESTJs are responsible and direct, keeping life organized.\n\nStrengths: reliable, decisive, organized. Weaknesses: domineering, inflexible.\n\nOne-line: ESTJ is the 'order commander', making the world orderly through efficiency.",
+
+  "ESFJ": "ESFJ – The Sociable Caregiver\nESFJs live by: 'Everyone happy, I’m happy.' You notice emotions and create joy. People see you as approachable; you are attentive and organized.\n\nYou care for others and plan gatherings. Friends find you sweet and fun.\n\nIn love, ESFJs show care through actions.\n\nStrengths: warm, attentive, social. Weaknesses: overly concerned with others' opinions.\n\nOne-line: ESFJ is the 'social warm hug', making everyone feel cared for.",
+
+  "ENFJ": "ENFJ – The Charming Leader\nENFJs live by: 'Influence starts with those around you.' You inspire and energize. People see you as warm and leader-like; you observe others’ needs closely.\n\nYou communicate and motivate well. Friends find you charismatic.\n\nIn love, ENFJs are attentive and caring.\n\nStrengths: leadership, empathetic, enthusiastic. Weaknesses: worry too much, neglect self.\n\nOne-line: ENFJ is the 'charming guide', lighting up the world with warmth and influence.",
+
+  "ENTJ": "ENTJ – The Decisive Executor\nENTJs live by: 'Clear goals, everything achievable.' You turn ideas into action, leading others. People see you as strong; you value efficiency.\n\nDecisive and strategic, friends see you as powerful and reliable.\n\nIn love, ENTJs are rational yet devoted, aligning goals with their partner.\n\nStrengths: decisive, strategic, leadership. Weaknesses: focus on goals may neglect emotions.\n\nOne-line: ENTJ is the 'CEO of life', controlling life with decisiveness and strategy."
+}
+
+    
+  },
+  "ja": {
+    "start_title": "性格テストへようこそ",
+    "start_desc": "このテストは全部で {total} 問あり、それぞれ4つの選択肢があります。",
+    "start_btn": "テストを開始",
+    "quiz_title": "性格テスト",
+    "quiz_progress": "質問 {current} / {total}",
+    "checkout_desc": "QRコードをスキャンして支払ってください（シミュレーション）",
+    "checkout_btn": "支払い済み",
+    "success_title": "支払い成功 ✅",
+    "success_type": "あなたのMBTIタイプ：{result}",
+    "success_btn": "再テスト",
+    "starting": "開始まで",
+    "payment_failed_title": "支払い失敗 ❌",
+    "payment_failed_desc": "もう一度お試しいただくか、別の支払い方法をご利用ください。",
+    "payment_failed_btn": "支払いに戻る",
+    "checkout_title": "支払い方法を選択",
+    "checkout_credit": "Stripe クレジットカードテスト",
+    "checkout_paypay": "PayPay サンドボックステスト",
+    "checkout_amount": "QRコードをスキャンして {amount} JPY を支払う（サンプル）",
+    "checkout_card_btn": "クレジットカードで支払う",
+    "checkout_desc_stripe": "クレジットカードで {amount} 円を支払う",
+    "checkout_btn_stripe": "クレジットカードで支払う",
+    "checkout_desc_paypay": "QRコードをスキャンして PayPay で {amount} 円を支払う",
+    "checkout_back_quiz": "テストに戻る",
+    "questions": [
+    {
+      "q": "放課後、宿題が終わっていないことに気づいたらどうする？",
+      "options": {
+        "素直に家に帰って終わらせる": "J",
+        "寝る前までずるずる引き延ばす": "P",
+        "歩きながら宿題が勝手に終わることを想像する": "N",
+        "宿題ロボを召喚する": "S"
+      }
+    },
+    {
+      "q": "友達や同僚が変なイベントに誘ってきたら？",
+      "options": {
+        "計画通りか確認してから行く": "J",
+        "その場の気分で参加する": "P",
+        "イベントの裏で起きるドラマを想像する": "N",
+        "現場の雰囲気を見てから判断": "S"
+      }
+    },
+    {
+      "q": "突然しゃべる猫が部屋に現れたら？",
+      "options": {
+        "正体と目的を聞く": "T",
+        "かわいさを感じてから考える": "F",
+        "未来の自分の化身だと想像する": "N",
+        "普段通り生活を続ける": "S"
+      }
+    },
+    {
+      "q": "朝、目覚ましが三回鳴ったら？",
+      "options": {
+        "予定通りに起きる": "J",
+        "もう少し寝るためにスヌーズ": "P",
+        "目覚ましが時間を止めてくれることを想像": "N",
+        "夢の冒険を続ける": "S"
+      }
+    },
+    {
+      "q": "謎のチケットを手に入れたら？",
+      "options": {
+        "攻略を調べて計画する": "J",
+        "適当に出かけて運任せで楽しむ": "P",
+        "チケットの裏に異世界が隠されていると想像": "N",
+        "周りの反応を見てから決める": "S"
+      }
+    },
+    {
+      "q": "植物の言葉が聞こえるようになったら？",
+      "options": {
+        "要求を記録して科学的に分析する": "T",
+        "慰めて、自分の気持ちも話す": "F",
+        "植物は宇宙人のスパイだと想像する": "N",
+        "普段通り過ごし、たまに聞く": "S"
+      }
+    },
+    {
+      "q": "翻訳アプリが日本語を間違えていたら？",
+      "options": {
+        "辞書で調べて正す": "J",
+        "適当に読み流す": "P",
+        "面白い翻訳を自作する": "N",
+        "大意を理解できればOK": "S"
+      }
+    },
+    {
+      "q": "放課後/仕事帰りに変な風が吹いてきたら？",
+      "options": {
+        "すぐ家に帰る": "J",
+        "風を楽しんでルートを適当に決める": "P",
+        "風の中に未知の生物がいると想像": "N",
+        "風に身を任せて自由に漂う": "S"
+      }
+    },
+    {
+      "q": "机の上に謎のボタンがあったら？",
+      "options": {
+        "結果を考えてから押す": "J",
+        "好奇心で即押す": "P",
+        "押すと世界が変わると想像": "N",
+        "他人の様子を見てから決める": "S"
+      }
+    },
+    {
+      "q": "深夜オンラインで人狼ゲームに誘われたら？",
+      "options": {
+        "事前に作戦を練る": "J",
+        "適当にプレイする": "P",
+        "自分が本当に人狼だと想像する": "N",
+        "チームメイトの行動を観察": "S"
+      }
+    },
+    {
+      "q": "カフェで変な限定ドリンクが出たら？",
+      "options": {
+        "レビューを見てから試す": "J",
+        "衝動で買ってみる": "P",
+        "飲むと不思議な能力が出ると想像": "N",
+        "まず匂いを嗅いで判断": "S"
+      }
+    },
+    {
+      "q": "夢で巨大なタコになったら？",
+      "options": {
+        "夢を記録して分析": "T",
+        "夢を楽しむ": "F",
+        "海の世界を征服する想像": "N",
+        "普段通りの行動を続ける": "S"
+      }
+    },
+    {
+      "q": "謎の宅配で全部アヒルのゴム製品が届いたら？",
+      "options": {
+        "整理して出所を調べる": "J",
+        "適当に置いて楽しむ": "P",
+        "アヒルの背後に秘密組織があると想像": "N",
+        "机に置いて写真を撮る": "S"
+      }
+    },
+    {
+      "q": "地下鉄で変な楽器を演奏していたら？",
+      "options": {
+        "演奏を真剣に聴き分析": "T",
+        "ノリで楽しむ": "F",
+        "演奏者は平行世界から来たと想像": "N",
+        "通り過ぎながらリズムに合わせる": "S"
+      }
+    },
+    {
+      "q": "スマホに「時間を操れます」と表示されたら？",
+      "options": {
+        "綿密な計画を立てる": "J",
+        "適当に試してみる": "P",
+        "未来世界での冒険を想像": "N",
+        "無視してスマホを使い続ける": "S"
+      }
+    },
+    {
+      "q": "学校/オフィスにミニ竜巻が出現したら？",
+      "options": {
+        "安全に皆を避難させる": "J",
+        "風と遊ぶ": "P",
+        "宇宙人の探検だと想像": "N",
+        "風の軌道を見て避ける": "S"
+      }
+    },
+    {
+      "q": "机の上に話すプリンターが現れたら？",
+      "options": {
+        "プリンターが何を印刷したいか聞く": "T",
+        "プリンターの気持ちを気にする": "F",
+        "未来型AIだと想像": "N",
+        "自分の印刷を続ける": "S"
+      }
+    },
+    {
+      "q": "天気を操れるとしたら？",
+      "options": {
+        "仕事や学習に合わせて調整": "J",
+        "気ままに変化させる": "P",
+        "天気が奇妙な冒険をもたらすと想像": "N",
+        "風に任せて体験": "S"
+      }
+    },
+    {
+      "q": "図書館に突然ワープゲートが現れたら？",
+      "options": {
+        "リスクを分析して判断": "J",
+        "勢いで飛び込む": "P",
+        "現実より楽しい世界だと想像": "N",
+        "他の人の動きを見てから": "S"
+      }
+    },
+    {
+      "q": "深夜、家具が勝手に踊り出したら？",
+      "options": {
+        "整頓して秩序を戻す": "J",
+        "一緒に踊って楽しむ": "P",
+        "家具が古代の儀式をしていると想像": "N",
+        "黙って見て自分は作業を続ける": "S"
+      }
+    }
+    ],
+    "results": {
+
+  "ISTJ": "ISTJ – 責任感のある実行者\nISTJは「ルールが人生」と信じる。まるで人間目覚まし時計のように、常に時間通りで頼れる存在。真面目に見えるが、心の中では世界を整理している。\n\n表面は厳しそうだが感情は深い。友達からは頼れる存在、内心はユーモアと温かさを楽しむ。\n\n恋愛では、約束をしっかり覚え、安定して相手に寄り添う。\n\n長所：信頼できる、責任感、整理整頓。短所：融通が利かない、頑固。\n\n一言：ISTJは『人生の鉄人』、黙々と秩序を守る。",
+
+  "ISFJ": "ISFJ – 優しい守護者\nISFJは「他人が幸せなら私も幸せ」と考える。小さな太陽のように、みんなの好みや誕生日、おやつの好みまで覚えている。\n\n静かに原則を守り、衝突を避ける。友達からは温かいナースのように見えるが、自分の平和を守る境界線も持つ。\n\n恋愛では、相手の小さな好みを覚えて、さりげなく気遣う。\n\n長所：気配り、思いやり、信頼性。短所：自己犠牲、頼みごとが苦手。\n\n一言：ISFJは『温かい毛布』、世界をそっと守る。",
+
+  "INFJ": "INFJ – 謎めいた夢想家\nINFJは「想像力が武器」と信じる。人の気付かないものに気付く魔法使いのよう。\n\n内面は豊かで、人生は物語のよう。友達からはカウンセラーのように見えるが、一人の時間も必要。\n\n恋愛では、静かにサプライズを計画して相手を大切にする。\n\n長所：洞察力、共感力、戦略的。短所：理想主義、疲れやすい。\n\n一言：INFJは『謎の計画者』、洞察と優しさで魔法を紡ぐ。",
+
+  "INTJ": "INTJ – 戦略的マスターマインド\nINTJは「計画が運より大事」と考える。チェスマスターのように先を読む。冷たく見えるが、大きな設計図に集中している。\n\n独立心が強く、友達には近寄りがたい印象。\n\n恋愛では、思慮深く行動で愛を示す。\n\n長所：論理的、目標志向、独立。短所：社交的距離感、柔軟性に欠ける。\n\n一言：INTJは『戦略の達人』、論理と計画で人生を制する。",
+
+  "ISTP": "ISTP – 独立した冒険者\nISTPは「行動は言葉に勝る」と信じる。問題解決者で、口より手を動かす。冷静に見えるが自由と新奇を愛する。\n\n実践的で適応力が高く、友達からはクールで神秘的。\n\n恋愛では、直接的で冒険心溢れる。\n\n長所：実践的、冷静、柔軟。短所：感情表現控えめ、誤解されやすい。\n\n一言：ISTPは『控えめな冒険者』、行動で世界を制す。",
+
+  "ISFP": "ISFP – 自由なアーティスト\nISFPは「人生はキャンバス」と考える。平凡な日も美しく変える力を持つ。穏やかに見えるが内面は自由な宇宙。\n\n今を楽しむ性格。友達からは可愛く神秘的。\n\n恋愛では、言葉よりさりげない行動で愛を示す。\n\n長所：芸術的、優しい、自由。短所：計画嫌い、先延ばし。\n\n一言：ISFPは『ロマンチックな放浪者』、美と自由で世界を彩る。",
+
+  "INFP": "INFP – 理想主義者\nINFPは「世界は優しくあるべき」と信じる。詩人のように心に物語を持つ。幻想に浸る。\n\n理想と真実を追求し、友達からは神秘的。\n\n恋愛では、創造的でロマンチック。\n\n長所：優しい、想像力豊か、共感力。短所：理想主義、敏感。\n\n一言：INFPは『優しい夢想家』、想像力で世界を温める。",
+
+  "INTP": "INTP – 分析哲学者\nINTPは「まず考え、後で行動」と信じる。全てを分析し、些細なことも深く考える。冷たく見えるが思考に没頭。\n\n好奇心旺盛で創造的。友達からはユニークで賢い。\n\n恋愛では、知性と機知で魅了。\n\n長所：知的、論理的、独立。短所：感情表現苦手、先延ばし。\n\n一言：INTPは『論理の探偵』、理性と創造で世界を探求。",
+
+  "ESTP": "ESTP – エネルギッシュな行動派\nESTPは「即行動、即楽しむ」と信じる。パーティーエンジンのように盛り上げる。自由と刺激を愛する。\n\n大胆で順応性高く、友達からは面白く頼れる。\n\n恋愛では、率直で冒険心に溢れる。\n\n長所：エネルギッシュ、積極的、適応力。短所：衝動的、細かい注意不足。\n\n一言：ESTPは『冒険の加速装置』、日常に刺激をもたらす。",
+
+  "ESFP": "ESFP – 楽しいパフォーマー\nESFPは「人生は楽しく」と考える。平凡な瞬間をショーに変える。感情に敏感で活発。\n\n社交的で明るく、友達からは可愛い。\n\n恋愛では、情熱的に行動で愛を示す。\n\n長所：熱心、ユーモア、社交的。短所：注意散漫、短気。\n\n一言：ESFPは『幸福発電機』、笑顔をまき散らす。",
+
+  "ENFP": "ENFP – 情熱的な探検者\nENFPは「世界は探検に値する」と考える。楽しさと新奇を発見。エネルギッシュで人とつながるのが好き。\n\n創造的で好奇心旺盛、友達からは面白くユーモラス。\n\n恋愛では、創意工夫で相手を驚かせる。\n\n長所：情熱的、想像力豊か、社交的。短所：注意散漫、短気。\n\n一言：ENFPは『活力探検者』、情熱で世界を照らす。",
+
+  "ENTP": "ENTP – 創造的な討論者\nENTPは「議論は楽しい」と信じる。新しいアイデアで刺激的。ウィットに富み、少し挑発的。\n\n好奇心旺盛でユーモラス、友達からは賢くて変わってる。\n\n恋愛では、言葉と創造で魅了。\n\n長所：機知、創造力、瞬発力。短所：気が散りやすい、不安定。\n\n一言：ENTPは『創造の火花』、ユーモアと知性で人生を燃やす。",
+
+  "ESTJ": "ESTJ – 組織のマネージャー\nESTJは「ルールは安全」と考える。混沌を秩序に変える。強く見えるが効率と明快さが好き。\n\n信頼性が高く、友達からは厳しいが頼れる。\n\n恋愛では、責任感を持ち、生活を整理する。\n\n長所：信頼性、決断力、整理整頓。短所：支配的、柔軟性に欠ける。\n\n一言：ESTJは『秩序の指揮官』、効率で世界を整える。",
+
+  "ESFJ": "ESFJ – 社交的なケアギバー\nESFJは「みんなが幸せなら私も幸せ」と考える。感情に敏感で喜びを作る。\n\n他人を気遣い、イベントも計画。友達からは可愛く楽しい。\n\n恋愛では、行動で愛を示す。\n\n長所：温かい、気配り、社交的。短所：他人の意見を気にしすぎる。\n\n一言：ESFJは『社交的なハグ』、みんなを大切にする。",
+
+  "ENFJ": "ENFJ – 魅力的なリーダー\nENFJは「影響は周囲から」と信じる。人を元気づけ、刺激する。温かく、観察力に優れる。\n\nコミュニケーションとモチベーションが得意。友達からはカリスマ的。\n\n恋愛では、細やかで思いやり深い。\n\n長所：リーダーシップ、共感力、熱意。短所：心配しすぎ、自分を後回し。\n\n一言：ENFJは『魅力的な案内人』、温かさで世界を照らす。",
+
+  "ENTJ": "ENTJ – 決断力ある実行者\nENTJは「目標明確、全て達成可能」と考える。アイデアを行動に移し、他人を導く。\n\n決断力と戦略性に優れ、友達からは強く頼れる。\n\n恋愛では、理性的だが献身的、目標を共有する。\n\n長所：決断力、戦略的、リーダーシップ。短所：目標重視で感情軽視。\n\n一言：ENTJは『人生のCEO』、決断と戦略で人生を制す。"
+
+
+  }
+  }
+}
+       
+    
+  
