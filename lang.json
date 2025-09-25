@@ -24,59 +24,222 @@
     "checkout_desc_paypay": "扫码支付金额 {amount} JPY",
     "checkout_back_quiz": "返回题目",
     "questions":[
-        {"q":"你在聚会中通常会如何？","options":{"很活跃，主动与人交流":"E","比较主动，但偶尔保持观察":"E/I","比较安静，多观察环境":"I/E","非常安静，倾向独处":"I"}},
-        {"q":"你做决策时倾向？","options":{"完全依赖逻辑和事实":"T","主要逻辑，但兼顾情感":"T/F","主要情感，但也考虑逻辑":"F/T","完全依赖情感和价值观":"F"}},
-        {"q":"你更喜欢哪种工作环境？","options":{"开放、多人协作":"E","灵活协作，但有独立空间":"E/I","安静独立，但偶尔协作":"I/E","独立、安静、少干扰":"I"}},
-        {"q":"处理信息时，你更偏向？","options":{"关注实际细节":"S","偏向现实，但也关注大局":"S/N","关注大局，但也留意细节":"N/S","抽象、概念性思考":"N"}},
-        {"q":"你在处理冲突时通常？","options":{"直接沟通，寻求效率":"T","主要逻辑解决，但兼顾关系":"T/F","重视关系，但兼顾逻辑":"F/T","以情感和价值观为导向":"F"}},
-        {"q":"你如何规划生活？","options":{"严格计划，注重秩序":"J","倾向计划，但保留灵活性":"J/P","偏向灵活，但也做安排":"P/J","完全随性，即兴而行":"P"}},
-        {"q":"你在团队中更常扮演？","options":{"领导、决策者":"E","积极参与，偶尔引导":"E/I","倾向观察和支持":"I/E","安静支持型成员":"I"}},
-        {"q":"面对新想法，你更倾向？","options":{"快速尝试实践":"S","实践为主，但考虑潜在价值":"S/N","偏向概念化，但考虑现实":"N/S","完全抽象理论分析":"N"}},
-        {"q":"你处理压力时更依赖？","options":{"行动和实际解决":"T","逻辑判断为主，兼顾情绪":"T/F","情绪与价值为主，兼顾逻辑":"F/T","情感导向、依靠价值观":"F"}},
-        {"q":"你喜欢与他人相处的方式？","options":{"频繁交流、分享":"E","适度交流、保持独立":"E/I","主要独立，但偶尔互动":"I/E","倾向独处、少社交":"I"}},
-        {"q":"你做决定时更看重？","options":{"现实可行性":"S","实际为主，但兼顾未来趋势":"S/N","未来潜力为主，但考虑现实":"N/S","远景和理念导向":"N"}},
-        {"q":"你处理任务的风格？","options":{"严格按步骤执行":"J","有计划但灵活调整":"J/P","偏向灵活调整，但保留计划":"P/J","即兴、随性完成":"P"}},
-        {"q":"在社交场合，你通常？","options":{"主动发起话题":"E","偶尔主动，主要观察":"E/I","主要观察，偶尔回应":"I/E","安静，不主动发言":"I"}},
-        {"q":"你更喜欢哪类学习方式？","options":{"实践和经验":"S","实践为主，但探索概念":"S/N","概念为主，但结合实际":"N/S","理论和抽象为主":"N"}},
-        {"q":"你解决问题时？","options":{"依赖分析和逻辑":"T","以逻辑为主，兼顾情绪":"T/F","以情绪为主，兼顾逻辑":"F/T","依赖情感和价值观":"F"}},
-        {"q":"你的生活节奏更倾向？","options":{"有规律，按计划":"J","基本计划，保留灵活":"J/P","灵活为主，但偶尔规划":"P/J","随性自由，即兴":"P"}},
-        {"q":"在团队决策中，你通常？","options":{"提出方案并推动":"E","参与讨论，偶尔引导":"E/I","倾向倾听和分析":"I/E","安静观察，低调参与":"I"}},
-        {"q":"你对未来更关注？","options":{"实际可行性":"S","现实为主，兼顾潜力":"S/N","潜力为主，兼顾现实":"N/S","理念和远景导向":"N"}},
-        {"q":"你喜欢处理事情的方式？","options":{"有条不紊，按规则":"J","规则为主，但保留灵活":"J/P","灵活为主，但注意规则":"P/J","完全随性，即兴完成":"P"}},
-        {"q":"面对新环境，你通常？","options":{"主动适应，快速融入":"E","主要主动，偶尔观察":"E/I","偏向观察，但能融入":"I/E","安静观察，保持距离":"I"}}
+    {
+      "q": "放学后发现作业没写完，你会怎么做？",
+      "options": {
+        "乖乖回家写完": "J",
+        "拖到睡前再敷衍完成": "P",
+        "边走边幻想作业自己写完": "N",
+        "直接召唤作业机器人": "S"
+      }
+    },
+    {
+      "q": "同事/同学约你去奇怪的活动，你会如何反应？",
+      "options": {
+        "先想想是否符合计划": "J",
+        "直接爽约或临时决定": "P",
+        "脑补活动可能的各种剧情": "N",
+        "观察现场氛围再行动": "S"
+      }
+    },
+    {
+      "q": "你的房间突然多出一只会说话的猫，你会？",
+      "options": {
+        "问清楚它的身份和目的": "T",
+        "先感受它萌不萌再决定": "F",
+        "想象它其实是你未来的化身": "N",
+        "默默继续原来的生活": "S"
+      }
+    },
+    {
+      "q": "早上闹钟响了三次，你的反应是？",
+      "options": {
+        "按计划起床不拖延": "J",
+        "赖床再设一次闹钟": "P",
+        "幻想闹钟会被时间暂停": "N",
+        "直接顺便做梦冒险": "S"
+      }
+    },
+    {
+      "q": "突然得到一张神秘门票，你会？",
+      "options": {
+        "查攻略、安排好行程": "J",
+        "随意出发，随缘体验": "P",
+        "幻想门票背后隐藏异世界": "N",
+        "先看看周围人反应再决定": "S"
+      }
+    },
+    {
+      "q": "你发现自己能听懂植物说话，你会？",
+      "options": {
+        "记录它们的需求，科学分析": "T",
+        "安慰它们，顺便讲讲心里话": "F",
+        "幻想植物其实是外星情报员": "N",
+        "继续做自己的事，偶尔偷听": "S"
+      }
+    },
+    {
+      "q": "翻译软件翻错日文，你会？",
+      "options": {
+        "查字典、纠正翻译": "J",
+        "随便读，顺其自然": "P",
+        "自创搞笑翻译版本": "N",
+        "理解大意就好，不纠结": "S"
+      }
+    },
+    {
+      "q": "下班/放学路上突然刮起奇怪风，你会？",
+      "options": {
+        "赶紧回家，不冒险": "J",
+        "享受风吹，随机决定路线": "P",
+        "幻想风里有未知生物在玩耍": "N",
+        "直接融入风中，自由漂流": "S"
+      }
+    },
+    {
+      "q": "桌上出现一个神秘按钮，你会按吗？",
+      "options": {
+        "先想好后果再决定": "J",
+        "好奇心驱使立刻按": "P",
+        "幻想按钮能改写世界": "N",
+        "观察别人按不按再行动": "S"
+      }
+    },
+    {
+      "q": "朋友邀请你参加午夜线上狼人杀，你会？",
+      "options": {
+        "提前排兵布阵，心中有数": "J",
+        "随缘玩，随机策略": "P",
+        "幻想自己真的是狼人": "N",
+        "顺便观察队友行为": "S"
+      }
+    },
+    {
+      "q": "咖啡店推出奇怪口味限量饮料，你会？",
+      "options": {
+        "看评价决定是否尝试": "J",
+        "冲动买一杯尝试": "P",
+        "想象饮料会带来奇幻能力": "N",
+        "先嗅嗅味道再决定": "S"
+      }
+    },
+    {
+      "q": "梦到自己变成巨型章鱼，你的第一反应？",
+      "options": {
+        "记录梦境，分析象征意义": "T",
+        "感受梦境，享受章鱼生活": "F",
+        "幻想自己能征服海底世界": "N",
+        "梦里继续做平常事情": "S"
+      }
+    },
+    {
+      "q": "收到一条神秘快递，里面全是橡皮鸭，你会？",
+      "options": {
+        "整理分类，研究来源": "J",
+        "随意摆放，享受乐趣": "P",
+        "想象鸭子背后隐藏的秘密组织": "N",
+        "放在桌上，偶尔拍照发朋友圈": "S"
+      }
+    },
+    {
+      "q": "地铁里有人演奏怪异乐器，你会？",
+      "options": {
+        "认真听，分析技巧": "T",
+        "随心感受，跟着节奏": "F",
+        "幻想演奏者是来自平行宇宙": "N",
+        "路过一边，顺便打个节拍": "S"
+      }
+    },
+    {
+      "q": "手机突然出现一个提示“你可以穿越时间”，你会？",
+      "options": {
+        "制定周密计划，计算影响": "J",
+        "随意尝试，看看会发生什么": "P",
+        "幻想自己在未来世界的奇遇": "N",
+        "继续刷手机，不理会提示": "S"
+      }
+    },
+    {
+      "q": "校园/办公室里出现迷你龙卷风，你会？",
+      "options": {
+        "提醒大家按安全流程撤离": "J",
+        "顺势玩耍，看谁被卷起来": "P",
+        "幻想这是外星生物在探险": "N",
+        "观察风的路径，避开就好": "S"
+      }
+    },
+    {
+      "q": "桌子上出现一台会说话的打印机，你会？",
+      "options": {
+        "问清楚打印机想打印什么": "T",
+        "先关心打印机的感受": "F",
+        "幻想打印机是未来人工智能": "N",
+        "继续打印自己的东西，不理会": "S"
+      }
+    },
+    {
+      "q": "如果你可以控制天气，你会？",
+      "options": {
+        "制定计划，调节工作学习天气": "J",
+        "随机变换天气，看心情": "P",
+        "幻想天气带来奇幻冒险": "N",
+        "随风而动，体验天气变化": "S"
+      }
+    },
+    {
+      "q": "图书馆里突然出现一个传送门，你会？",
+      "options": {
+        "分析风险，决定是否进入": "J",
+        "冲动进去看看": "P",
+        "幻想进入的世界比现实精彩": "N",
+        "观察其他人动作再决定": "S"
+      }
+    },
+    {
+      "q": "深夜发现房间里的家具开始跳舞，你会？",
+      "options": {
+        "整理家具，恢复秩序": "J",
+        "一起跳舞，享受奇趣": "P",
+        "幻想家具在表演古老仪式": "N",
+        "默默看它们跳，自己继续做事": "S"
+      }
+    }
     ],
     "results":{
-        "ISTJ": "ISTJ 类型的人严谨守序，对规则、制度和责任感有高度重视。他们在日常生活和工作中倾向按计划执行任务，喜欢遵循明确的流程和标准。面对问题时，他们通常进行系统性分析，优先考虑可行性和实际效果，而非依赖直觉或即兴判断。ISTJ 通常稳重可靠，擅长管理事务性和细节性的工作，是团队中值得信赖的执行者。心理学上，这类人倾向内化规范和价值观，行为上注重稳定和可控环境。虽然可能显得保守或刻板，但他们的严谨和坚持能够保证目标高效实现，特别适合需要纪律性和责任感的岗位。ISTJ 在人际关系中可能不善表达情感，但通过行动体现关心，是典型的实干型人格。",
         
-        "ISFJ": "ISFJ 人格温和细腻，富有同理心和责任感，常常关注他人的需求并通过实际行动提供帮助。他们倾向维护稳定与秩序，重视传统和细节，并在社交场合表现出耐心和忠诚。心理学研究显示，ISFJ 倾向以内在价值观为行为指导，同时注重现实可行性，擅长在复杂环境中协调资源与人际关系。这类人通常可靠、守信，是团队和家庭中不可或缺的支持力量。虽然内向，但在熟悉的人群中会展现出高度关怀。他们有时可能过度自我牺牲，需要学会平衡自我需求与他人期望，从而避免情绪耗竭。ISFJ 的细致观察力和责任感，使他们在长期项目管理和客户关系维护中表现突出。",
-        
-        "INFJ": "INFJ 类型的人富有洞察力和理想主义精神，常追求个人价值与社会意义的统一。他们能够敏锐理解他人的情绪和动机，并善于通过策略性方式引导和影响周围环境。心理学上，INFJ 倾向使用直觉与情感综合分析信息，形成深刻的世界观和行为模式。他们通常内向、深思熟虑，但对认定的目标极度执着，具有高度自主性和长期规划能力。INFJ 擅长在复杂的人际关系中提供指导和支持，善于解决抽象和伦理性问题。他们的创造性思维和价值导向使其在艺术、教育、咨询等领域表现出色。潜在的挑战是过度理想化与自我批判，需要学会现实调节与心理防护。",
-        
-        "INTJ": "INTJ 是天生的战略思考者，独立且有远见。他们擅长分析复杂系统、制定长远计划，并通过逻辑和策略实现目标。心理学上，INTJ 倾向理性思考和系统化分析，行为上重视效率和可控性。通常冷静、内敛，可能在情感表达上显得疏离，但在项目管理、科研和决策中表现极其可靠。INTJ 喜欢深度探索问题，关注整体结构与长远趋势，而非表面细节。他们具有高度自主性和批判性思维，善于发现潜在问题和改进方案。潜在挑战是过于理性而忽视情感需求，需要在沟通和团队合作中增强情绪敏感度。INTJ 的独立性和战略眼光，使其在高复杂度环境中具备天然优势。",
-        
-        "ISTP": "ISTP 类型的人行动导向、冷静理性，善于动手解决问题。他们偏好直接经验和实践操作，通常在压力情境下表现出高度适应力和快速判断能力。心理学上，ISTP 倾向以逻辑和现实为导向，注重实效与结果而非理论推演。他们喜欢自由与灵活的环境，不喜欢受约束或繁琐规则，思维敏捷，善于分析问题核心。ISTP 在技术、工程、运动或紧急管理中表现出色，能够迅速识别问题并提出切实可行的解决方案。潜在弱点是情绪表达不充分，可能显得疏离或不易被理解。通过发展社交和情绪敏感性，ISTP 能够更有效地在团队中发挥作用。",
-        
-        "ISFP": "ISFP 是温柔、安静且充满艺术气质的人，注重个人体验和感受。他们通常偏向内向，但对环境细微变化极具敏感性。心理学上，ISFP 倾向情感驱动行为，重视美学和价值表达，喜欢通过艺术、创造或自然活动释放自我。行为上，他们追求自由与灵活性，讨厌严格约束或过度计划。ISFP 善于观察和理解他人，通常以行动而非言语表达关心。潜在的挑战是可能过于回避冲突或难以长期坚持结构化任务。ISFP 的创造力、同理心和适应性，使他们在艺术创作、护理及教育等领域表现突出。",
-        
-        "INFP": "INFP 是典型理想主义者，重视内心价值与个人信念，追求意义感和自我实现。他们善于洞察他人情绪，富有同理心，同时对理念和道德标准高度敏感。心理学研究显示，INFP 倾向探索抽象概念和哲学问题，喜欢通过写作、艺术或思想表达自我。通常内向、深思熟虑，但在认同的价值目标上极度执着。行为上，他们偏向创造性、非结构化思维，善于发掘潜在可能性。潜在劣势是现实处理能力有限，可能出现理想与现实冲突。INFP 的内在价值导向和同理心，使其在艺术、咨询、心理治疗等领域展现独特优势。",
-        
-        "INTP": "INTP 类型的人逻辑性强、理智独立，喜欢分析复杂概念和理论问题。他们偏好独立探索和抽象思维，善于发现系统中的规律与潜在问题。心理学上，INTP 倾向以逻辑分析和客观推理为决策基础，行为上偏向理性、灵活但可能显得抽象或疏离。他们追求知识与理解的深度，喜欢挑战传统假设和权威观点。INTP 通常内向，但在思想交流和创新讨论中非常活跃。潜在挑战是情感和社交敏感性不足，需要学习表达与共情能力。INTP 的分析能力和创新精神，使其在科研、技术和战略规划中表现卓越。",
-        
-        "ESTP": "ESTP 是典型行动导向型人格，充满冒险精神和即时应对能力。他们喜欢实践、挑战和刺激，善于在动态环境中迅速作出决策。心理学上，ESTP 偏向外向与感官驱动行为，重视现实反馈和即时体验。行为上，他们灵活、适应力强，能够快速识别机会与风险。社交活跃，擅长通过互动和行动影响环境。潜在劣势是缺乏长远规划，可能忽略长期影响。ESTP 在紧急管理、运动、销售或创业等领域表现出色，其敏锐洞察力和执行力是核心优势。",
-        
-        "ESFP": "ESFP 类型的人外向、热情、乐观，喜欢与人互动并享受当下体验。他们擅长调动环境氛围，行为上充满活力和感染力。心理学上，ESFP 倾向情感和感官驱动，重视即时反馈和人际关系质量。通常直觉敏锐，擅长观察细微变化和社交暗示。偏好灵活、自由的生活方式，反感僵化规则。潜在弱点是长期规划和耐心不足，可能导致目标延迟。ESFP 的社交能力、表现力和适应性，使其在娱乐、教育、销售及公共活动中极具魅力。",
-        
-        "ENFP": "ENFP 是富有创造力和感染力的人，充满热情和探索精神。他们喜欢尝试新事物、发现新可能，并善于激励和启发他人。心理学研究表明，ENFP 倾向直觉与情感驱动，思维发散，善于多角度分析问题。行为上，他们外向、善于表达，社交能力强，常常带动团队氛围。潜在劣势是专注力不足，容易对短期兴趣过度投入而忽略细节或执行。ENFP 的创造性、热情和洞察力，使其在创意、创业、咨询和教育领域表现突出。",
-        
-        "ENTP": "ENTP 类型的人机智、创新，善于分析复杂问题并提出新颖解决方案。他们偏向外向、灵活思维，喜欢辩论和探索各种可能性。心理学上，ENTP 倾向逻辑与直觉并重，行为上快速适应环境并善于识别机会。通常充满自信和策略性思维，喜欢挑战现状并寻找改进方法。潜在劣势是耐心不足，可能忽略执行细节或长期后果。ENTP 的创新能力、战略洞察力和沟通技巧，使其在商业、创业、技术开发和创意策划中具有天然优势。",
-        
-        "ESTJ": "ESTJ 是典型组织者和执行者，注重效率、秩序和目标实现。他们擅长管理事务、团队和资源，行为上追求可控性和实际效果。心理学上，ESTJ 倾向外向与思维驱动，逻辑清晰、行动力强，喜欢制定规则并确保执行。通常果断、务实，擅长评估风险和制定计划。潜在弱点是对灵活性和情感需求敏感度较低，可能显得过于强势或保守。ESTJ 的组织能力、执行力和责任感，使其在管理、行政和工程等领域表现卓越。",
-        
-        "ESFJ": "ESFJ 类型的人热情、体贴，重视人际关系和社会责任感。他们敏感他人需求，善于维持团队或家庭的和谐。心理学上，ESFJ 倾向外向与情感驱动，行为上注重实践和支持性行动。通常可靠、耐心、善于沟通与协调，擅长建立信任和合作关系。潜在挑战是过度关注他人评价，可能导致压力或自我牺牲。ESFJ 的协调能力、责任感和社交智慧，使其在教育、护理、客户服务和团队管理中极具价值。",
-        
-        "ENFJ": "ENFJ 是有领导力和感染力的人，擅长理解和激励他人。他们能够洞察团队或个人需求，通过策略性行为引导目标实现。心理学上，ENFJ 倾向外向与情感驱动，行为上注重社会价值和关系建设。通常热情、善于沟通与组织，能够激发团队潜力。潜在挑战是过度承担责任，可能忽略自我需求。ENFJ 的领导力、洞察力和激励能力，使其在教育、管理、公共事务和咨询中表现卓越。",
-        
-        "ENTJ": "ENTJ 类型的人天生战略家，注重目标、效率和执行力。他们擅长分析复杂问题、制定长远计划，并通过系统化策略实现目标。心理学上，ENTJ 倾向外向与思维驱动，行为上果断且具备强烈的领导欲望。通常自信、理性、具备组织与协调能力，能够有效激励团队实现高效成果。潜在劣势是情绪敏感度低，可能显得冷酷或强势。ENTJ 的战略眼光、决策力和执行能力，使其在管理、创业、战略规划和技术领导中表现卓越。"
+          "ISTJ": "ISTJ – 认真执行者\nISTJ的人生信条大概是：“规矩就是生命”。你们就像生活里的闹钟，无论多晚，多乱，总能准时、稳妥地把事情做好。别人可能觉得你们板着脸，其实你们心里有条不紊，暗暗把世界整理得井井有条。\n\n表面上严肃，其实内心很重感情，只是表达方式像严谨的说明书。朋友们看到你们像个靠谱铁人，但你们其实也会偷偷欣赏小幽默和温暖的瞬间。\n\n恋爱里，ISTJ稳重可靠，你会为另一半记得每一个小约定、每一次重要日程，哪怕对方没说出口。 \n\n优点：可靠、负责、组织力强。缺点：有时候太死板，不太懂变通。\n\n一句话总结：ISTJ是生活里的“靠谱铁人”，把秩序和规则默默维护到位。",
+
+          "ISFJ": "ISFJ – 温柔守护者\nISFJ的人生信条大概是：“别人开心，我就开心”。你们就像生活里的小太阳，总是在暗暗记住每个人的喜好、生日和零食偏好，默默为大家制造小惊喜。别人可能不知道，你们已经在背后为团队整理好每一个细节，把混乱变成秩序。\n\n表面上柔弱，其实心里很有原则：不会随便妥协，但尽量不让冲突伤到别人。朋友们看你们像暖心护士，但你们也有“雷区”，一旦被冒犯，可能会默默拉黑——不是报复，只是保护自己的和平。\n\n恋爱里，ISFJ温柔又细心，你会记得对方喜欢的咖啡温度、抱枕位置，哪怕小事也能让另一半觉得“太贴心了”。\n\n优点：细心、体贴、靠谱。缺点：容易委屈自己，不太敢开口要求。\n\n一句话总结：ISFJ就是生活里的“暖心小棉袄”，默默守护世界的秩序。",
+
+          "INFJ": "INFJ – 神秘梦想家\nINFJ的人生信条大概是：“想象力才是武器”。你们像在暗夜里点亮小灯的巫师，总能看到别人看不到的情绪波动和隐藏需求。别人觉得你们神秘，其实你们早就悄悄在计划世界的小惊喜。\n\n内心戏超级丰富，能把生活的每一秒都编成故事，有时候连自己都沉浸其中。朋友觉得你们像心理医生，但你们也需要自己的独处时间来充电。\n\n恋爱里，INFJ深情又细腻，会为另一半写无数小纸条、策划惊喜，但不会轻易表露自己脆弱的一面。\n\n优点：洞察力强、有同理心、善于规划。缺点：偶尔太理想化，容易疲惫。\n\n一句话总结：INFJ是生活里的“神秘策划师”，用洞察和温柔编织现实里的小魔法。",
+
+          "INTJ": "INTJ – 战略策划者\nINTJ的人生信条大概是：“计划比运气重要”。你们像战术棋盘上的大师，总能预判几步之外的情况。别人觉得你们冷漠，其实你们只是专注在自己的宏大蓝图上，不喜欢浪费时间在琐事上。\n\n生活里，你们是自己世界的掌控者，喜欢效率和逻辑。朋友觉得你们难懂，其实你们只是不愿随便分享内心世界。\n\n恋爱里，INTJ理智又深情，会默默关注另一半的成长和需求，用行动胜过言语。\n\n优点：逻辑强、目标明确、独立。缺点：社交冷淡，偶尔不够灵活。\n\n一句话总结：INTJ是生活里的“战略大师”，用理智和计划掌控生活全局。",
+
+          "ISTP": "ISTP – 独行冒险家\nISTP的人生信条大概是：“动手比动口快”。你们像生活里的修理工，遇到问题喜欢自己搞定，而不是听别人唠叨。别人觉得你们冷静，其实你们热爱自由和新奇体验。\n\n喜欢尝试各种操作和挑战，随遇而安，随手就能解决复杂问题。朋友觉得你们神秘又酷，其实你们只是低调享受当下。\n\n恋爱里，ISTP直接又有趣，会带另一半一起体验冒险，但不喜欢过多情绪戏。\n\n优点：动手能力强、冷静、随性。缺点：情感表达少，容易被误解。\n\n一句话总结：ISTP是生活里的“低调冒险家”，用行动而非言语玩转世界。",
+
+          "ISFP": "ISFP – 自由艺术家\nISFP的人生信条大概是：“生活就是一幅画”。你们像行走的画布，总能把普通日子变得有趣又美好。别人觉得你们温柔，其实你们自由、随性，有自己的小宇宙。\n\n生活里，ISFP喜欢享受当下，哪怕只是泡一杯茶，也能自成仪式感。朋友们觉得你们可爱又神秘，你们只是忠于自己。\n\n恋爱里，ISFP细腻又浪漫，会用小动作表达关心，而不是大段表白。\n\n优点：富有艺术感、温柔、随性。缺点：不喜欢计划，容易拖延。\n\n一句话总结：ISFP是生活里的“浪漫行者”，让世界因自由和美好而动人。",
+
+          "INFP": "INFP – 理想主义者\nINFP的人生信条大概是：“世界应该更温柔”。你们像生活里的诗人，总在脑海里写无数故事和理想。别人觉得你们文艺，其实你们内心戏超级丰富，偶尔会沉迷幻想。\n\n生活里，INFP喜欢追求理想与真心，哪怕现实不完美，也不会轻易妥协。朋友觉得你们神秘又感性，你们只是用自己的方式感受世界。\n\n恋爱里，INFP浪漫且深情，会用文字、创意和小惊喜表达爱意。\n\n优点：善良、想象力丰富、有同理心。缺点：容易理想化，敏感。\n\n一句话总结：INFP是生活里的“温柔梦想家”，用理想和想象力温暖世界。",
+
+          "INTP": "INTP – 思辨哲学家\nINTP的人生信条大概是：“先想清楚再行动”。你们像生活里的逻辑侦探，总在分析一切，甚至连生活小事也不放过。别人觉得你们冷漠，其实你们只是沉浸在自己的思考世界。\n\n生活里，INTP喜欢探索理论和新奇想法，偶尔会忘记吃饭和睡觉。朋友觉得你们古怪又聪明，你们只是好奇心旺盛。\n\n恋爱里，INTP理性又幽默，会用巧思和创意打动另一半。\n\n优点：聪明、逻辑强、独立。缺点：情感表达少，容易拖延。\n\n一句话总结：INTP是生活里的“逻辑侦探”，用理性和创意探索世界。",
+
+          "ESTP": "ESTP – 活力行动派\nESTP的人生信条大概是：“快干快玩”。你们像生活里的派对发动机，总能带动气氛，让周围的人热血沸腾。别人觉得你们外向，其实你们热爱自由和刺激，讨厌拖沓。\n\n生活里，ESTP敢于冒险，喜欢当下行动，反应快且随机应变能力强。朋友觉得你们刺激又可靠，你们只是随性而活。\n\n恋爱里，ESTP直接又浪漫，会带另一半一起玩刺激活动，而不是空谈理论。\n\n优点：热情、行动力强、随机应变快。缺点：容易冲动，不够细致。\n\n一句话总结：ESTP是生活里的“冒险加速器”，让平凡日子燃起来。",
+
+          "ESFP": "ESFP – 欢乐表演者\nESFP的人生信条大概是：“生活要high起来”。你们像生活里的舞台明星，总能把普通时刻变成秀场。别人觉得你们活泼，其实你们敏锐，能察觉周围每个人的情绪。\n\n生活里，ESFP喜欢互动和热闹，总能带来笑声和惊喜。朋友们觉得你们可爱又迷人，你们只是享受当下。\n\n恋爱里，ESFP热情又浪漫，会用行动和表演吸引另一半。\n\n优点：热情、幽默、社交强。缺点：容易分心，缺乏耐心。\n\n一句话总结：ESFP是生活里的“快乐制造机”，让周围的人都开怀大笑。",
+
+          "ENFP": "ENFP – 热情探索者\nENFP的人生信条大概是：“世界值得冒险”。你们像生活里的探险家，总能发现新奇和乐趣。别人觉得你们多动，其实你们只是热爱尝试和连接。\n\n生活里，ENFP充满创意和好奇心，喜欢与人互动和讨论各种疯狂想法。朋友觉得你们幽默又有趣，你们只是心思活跃。\n\n恋爱里，ENFP浪漫又热情，会用创意和惊喜让另一半心跳加速。\n\n优点：热情、创意丰富、善于交际。缺点：容易分心，缺乏耐性。\n\n一句话总结：ENFP是生活里的“活力探索家”，用热情和创意点亮世界。",
+
+          "ENTP": "ENTP – 创意辩论家\nENTP的人生信条大概是：“辩论也是乐趣”。你们像生活里的创新火花，总能提出新点子，让人耳目一新。别人觉得你们机智，又有点挑衅，其实你们只是享受思维碰撞。\n\n生活里，ENTP充满好奇和幽默，总能把平淡事情变得有趣。朋友觉得你们聪明又古怪，你们只是追求刺激与新鲜感。\n\n恋爱里，ENTP聪明幽默，会用言语和创意抓住另一半的心。\n\n优点：机智、创意丰富、反应快。缺点：容易分心，不够稳定。\n\n一句话总结：ENTP是生活里的“创意火花”，用机智和幽默点燃生活。",
+
+          "ESTJ": "ESTJ – 组织管理者\nESTJ的人生信条大概是：“规则就是安全感”。你们像生活里的指挥官，总能把混乱变成秩序。别人觉得你们强势，其实你们只是喜欢效率和清楚的规则。\n\n生活里，ESTJ靠谱又有行动力，喜欢带领团队完成任务。朋友觉得你们严厉又可靠，你们只是希望事情顺利进行。\n\n恋爱里，ESTJ负责又直接，会帮另一半安排生活，让日常井然有序。\n\n优点：可靠、果断、有组织力。缺点：有时强势，不够灵活。\n\n一句话总结：ESTJ是生活里的“秩序指挥官”，用效率和规则让世界井然有序。",
+
+          "ESFJ": "ESFJ – 热心社交家\nESFJ的人生信条大概是：“大家开心，我就开心”。你们像生活里的温暖中心，总能察觉周围情绪，为大家制造欢乐。别人觉得你们活泼好相处，其实你们细心又有条理。\n\n生活里，ESFJ善于照顾人，总能安排好聚会和小惊喜。朋友觉得你们贴心又有趣，你们只是享受互动。\n\n恋爱里，ESFJ温柔体贴，会用行动和照顾让另一半感受到满满关怀。\n\n优点：热心、体贴、社交能力强。缺点：有时过于在意他人评价。\n\n一句话总结：ESFJ是生活里的“社交暖心包”，让每个人都感到被照顾。",
+
+          "ENFJ": "ENFJ – 魅力引导者\nENFJ的人生信条大概是：“影响世界从身边开始”。你们像生活里的灯塔，总能激励别人、带动气氛。别人觉得你们有领导力又温暖，其实你们细心观察每个人的情绪和需求。\n\n生活里，ENFJ擅长沟通和激励，总能让团队充满干劲。朋友觉得你们热情又有魅力，你们只是享受带动大家。\n\n恋爱里，ENFJ体贴又深情，会全力照顾另一半情绪和需求。\n\n优点：领导力强、善解人意、热情。缺点：容易操心别人，忽略自己。\n\n一句话总结：ENFJ是生活里的“魅力带头人”，用温暖和影响力照亮周围的人。",
+
+          "ENTJ": "ENTJ – 决策执行者\nENTJ的人生信条大概是：“目标明确，一切皆可达成”。你们像生活里的CEO，总能把想法变成行动，带领大家达成目标。别人觉得你们强势，其实你们只是效率至上，不喜欢浪费时间。\n\n生活里，ENTJ果断又有计划，总能推动项目顺利进行。朋友觉得你们有魄力又可靠，你们只是追求成功和效率。\n\n恋爱里，ENTJ理性而深情，会规划未来并确保两个人的目标一致。\n\n优点：果断、计划性强、领导力强。缺点：有时过于专注目标，忽略感情。\n\n一句话总结：ENTJ是生活里的“行动CEO”，用果断和规划掌控生活。"
+
+
     }
   },
  "en": {
@@ -104,62 +267,223 @@
     "checkout_desc_paypay": "Scan QR to pay {amount} JPY via PayPay",
     "checkout_back_quiz": "Back to Quiz",
     "questions": [
-      {"q":"How do you usually behave at parties?","options":{"Very active, interact with everyone":"E","Somewhat active, sometimes observe":"E/I","Quiet, mostly observing":"I/E","Very quiet, prefer being alone":"I"}},
-      {"q":"When making decisions, you tend to?","options":{"Rely entirely on logic and facts":"T","Mainly logic but consider feelings":"T/F","Mainly feelings but consider logic":"F/T","Rely entirely on emotions and values":"F"}},
-      {"q":"Which type of work environment do you prefer?","options":{"Open, collaborative":"E","Flexible collaboration with some private space":"E/I","Quiet and independent, occasional collaboration":"I/E","Independent, quiet, minimal disturbance":"I"}},
-      {"q":"When processing information, you tend to?","options":{"Focus on concrete details":"S","Mostly practical, consider big picture":"S/N","Focus on big picture, notice details":"N/S","Abstract and conceptual thinking":"N"}},
-      {"q":"How do you usually handle conflicts?","options":{"Communicate directly, seek efficiency":"T","Logical resolution but consider relationships":"T/F","Value relationships but consider logic":"F/T","Guided by emotions and values":"F"}},
-      {"q":"How do you plan your life?","options":{"Strictly planned, orderly":"J","Plan-oriented but flexible":"J/P","Flexible but somewhat organized":"P/J","Completely spontaneous":"P"}},
-      {"q":"Which role do you usually take in a team?","options":{"Leader, decision maker":"E","Active participant, sometimes guiding":"E/I","Observer and supporter":"I/E","Quiet supporting member":"I"}},
-      {"q":"Facing new ideas, you tend to?","options":{"Quickly try them out":"S","Practice first but consider potential value":"S/N","Conceptual but consider reality":"N/S","Fully abstract theoretical analysis":"N"}},
-      {"q":"When under stress, you rely more on?","options":{"Action and practical solutions":"T","Logic first, consider emotions":"T/F","Emotions first, consider logic":"F/T","Emotion-driven, value-guided":"F"}},
-      {"q":"How do you prefer interacting with others?","options":{"Frequent communication and sharing":"E","Moderate interaction, maintain independence":"E/I","Mostly independent, occasional interaction":"I/E","Prefer solitude, little social":"I"}},
-      {"q":"When making decisions, you value more?","options":{"Practical feasibility":"S","Mostly practical but consider future trends":"S/N","Future potential but consider reality":"N/S","Vision and principle-oriented":"N"}},
-      {"q":"Your task handling style?","options":{"Strictly follow steps":"J","Planned but flexible":"J/P","Flexible but keep some plan":"P/J","Spontaneous and casual":"P"}},
-      {"q":"In social situations, you usually?","options":{"Initiate conversations":"E","Occasionally initiate, mostly observe":"E/I","Mostly observe, respond occasionally":"I/E","Quiet, do not speak up":"I"}},
-      {"q":"Preferred learning style?","options":{"Hands-on experience":"S","Practice-based but explore concepts":"S/N","Conceptual but applied":"N/S","Theoretical and abstract":"N"}},
-      {"q":"When solving problems?","options":{"Rely on analysis and logic":"T","Logic first, consider emotions":"T/F","Emotion first, consider logic":"F/T","Rely on emotions and values":"F"}},
-      {"q":"Your life rhythm tends to?","options":{"Regular, planned":"J","Basically planned, keep flexible":"J/P","Flexible but sometimes planned":"P/J","Free and spontaneous":"P"}},
-      {"q":"In team decisions, you usually?","options":{"Propose and push ideas":"E","Participate in discussion, sometimes guide":"E/I","Listen and analyze":"I/E","Observe quietly, participate low-key":"I"}},
-      {"q":"When thinking about the future, you focus on?","options":{"Practical feasibility":"S","Reality-focused but consider potential":"S/N","Potential-focused but consider reality":"N/S","Vision and ideals":"N"}},
-      {"q":"Preferred way to handle tasks?","options":{"Orderly, follow rules":"J","Rule-based but flexible":"J/P","Flexible but mindful of rules":"P/J","Completely spontaneous":"P"}},
-      {"q":"When entering a new environment, you usually?","options":{"Adapt actively and quickly":"E","Mostly active, sometimes observe":"E/I","Observe first but integrate":"I/E","Observe quietly, keep distance":"I"}}
-
+    {
+      "q": "After school/work, you realize your homework/tasks aren’t done. What do you do?",
+      "options": {
+        "Go home and finish it properly": "J",
+        "Procrastinate until the last minute": "P",
+        "Imagine the homework magically finishing itself": "N",
+        "Summon a homework-solving robot": "S"
+      }
+    },
+    {
+      "q": "Your friends/colleagues invite you to a weird event. How do you react?",
+      "options": {
+        "Check the plan carefully before going": "J",
+        "Decide on the spot and join for fun": "P",
+        "Imagine all the secret drama behind the event": "N",
+        "See the vibe first, then decide": "S"
+      }
+    },
+    {
+      "q": "A talking cat suddenly appears in your room. What do you do?",
+      "options": {
+        "Ask its identity and purpose": "T",
+        "Feel the cuteness before deciding": "F",
+        "Imagine it’s your future self in disguise": "N",
+        "Carry on as usual": "S"
+      }
+    },
+    {
+      "q": "Your alarm rings three times in the morning. What do you do?",
+      "options": {
+        "Get up as scheduled": "J",
+        "Hit snooze for a bit more sleep": "P",
+        "Imagine the alarm can stop time": "N",
+        "Continue dreaming your adventure": "S"
+      }
+    },
+    {
+      "q": "You get a mysterious ticket. What’s your move?",
+      "options": {
+        "Research and plan carefully": "J",
+        "Go randomly and enjoy the surprise": "P",
+        "Imagine it leads to a hidden parallel world": "N",
+        "Decide after seeing how others react": "S"
+      }
+    },
+    {
+      "q": "You suddenly hear plants talking. How do you react?",
+      "options": {
+        "Record and analyze scientifically": "T",
+        "Comfort them and share your feelings": "F",
+        "Imagine plants are alien spies": "N",
+        "Go about your day, occasionally listening": "S"
+      }
+    },
+    {
+      "q": "Your translation app mistranslates something. How do you respond?",
+      "options": {
+        "Check the dictionary and correct it": "J",
+        "Ignore it and move on": "P",
+        "Create a fun, alternative translation": "N",
+        "Understand the gist and leave it": "S"
+      }
+    },
+    {
+      "q": "After school/work, a strange wind blows. What do you do?",
+      "options": {
+        "Go home immediately": "J",
+        "Enjoy the wind and choose a random route": "P",
+        "Imagine a mysterious creature riding the wind": "N",
+        "Float along freely with the breeze": "S"
+      }
+    },
+    {
+      "q": "A mysterious button appears on your desk. What’s your move?",
+      "options": {
+        "Think carefully before pressing": "J",
+        "Press immediately out of curiosity": "P",
+        "Imagine it will change the world": "N",
+        "Observe others and decide": "S"
+      }
+    },
+    {
+      "q": "Invited to a midnight online Werewolf game. What do you do?",
+      "options": {
+        "Plan your strategy in advance": "J",
+        "Play spontaneously for fun": "P",
+        "Imagine you are really a werewolf": "N",
+        "Observe teammates’ actions": "S"
+      }
+    },
+    {
+      "q": "A café serves a weird limited-time drink. How do you respond?",
+      "options": {
+        "Check reviews before trying": "J",
+        "Buy it on impulse": "P",
+        "Imagine it gives you mysterious powers": "N",
+        "Smell it first and decide": "S"
+      }
+    },
+    {
+      "q": "You dream of becoming a giant octopus. What do you do?",
+      "options": {
+        "Record and analyze the dream": "T",
+        "Enjoy the dream": "F",
+        "Imagine conquering the underwater world": "N",
+        "Act normal in the dream": "S"
+      }
+    },
+    {
+      "q": "A mysterious delivery arrives, full of rubber ducks. How do you react?",
+      "options": {
+        "Organize and check the source": "J",
+        "Put them around for fun": "P",
+        "Imagine a secret organization is behind it": "N",
+        "Take photos and leave them on your desk": "S"
+      }
+    },
+    {
+      "q": "Someone plays a weird instrument on the subway. How do you react?",
+      "options": {
+        "Listen seriously and analyze": "T",
+        "Enjoy it casually": "F",
+        "Imagine the player came from a parallel world": "N",
+        "Follow the rhythm as you pass by": "S"
+      }
+    },
+    {
+      "q": "Your phone says 'You can control time.' How do you react?",
+      "options": {
+        "Plan carefully": "J",
+        "Experiment randomly": "P",
+        "Imagine going on adventures in a future world": "N",
+        "Ignore and keep using your phone": "S"
+      }
+    },
+    {
+      "q": "A mini tornado appears in your school/office. What do you do?",
+      "options": {
+        "Safely evacuate everyone": "J",
+        "Play with the wind": "P",
+        "Imagine aliens exploring": "N",
+        "Observe the wind and dodge it": "S"
+      }
+    },
+    {
+      "q": "A talking printer appears on your desk. What do you do?",
+      "options": {
+        "Ask what it wants to print": "T",
+        "Consider the printer’s feelings": "F",
+        "Imagine it’s a futuristic AI": "N",
+        "Keep printing as usual": "S"
+      }
+    },
+    {
+      "q": "If you could control the weather, what would you do?",
+      "options": {
+        "Adjust it according to work/study": "J",
+        "Change it freely for fun": "P",
+        "Imagine the weather creating wild adventures": "N",
+        "Experience it as it comes": "S"
+      }
+    },
+    {
+      "q": "A warp gate suddenly appears in the library. What do you do?",
+      "options": {
+        "Analyze risk before deciding": "J",
+        "Jump in on impulse": "P",
+        "Imagine a world more fun than reality": "N",
+        "Wait and watch what others do": "S"
+      }
+    },
+    {
+      "q": "At night, furniture suddenly starts dancing. How do you react?",
+      "options": {
+        "Tidy up to restore order": "J",
+        "Dance along for fun": "P",
+        "Imagine it’s an ancient ritual": "N",
+        "Watch quietly while continuing work": "S"
+      }
+    }
     ],
     "results": {
-    "ISTJ": "ISTJ individuals are meticulous and orderly, placing high importance on rules, systems, and a sense of responsibility. In daily life and work, they tend to follow structured plans and clear procedures. When facing problems, they typically perform systematic analysis, prioritizing feasibility and practical outcomes over intuition or spontaneous judgment. ISTJs are generally reliable and steady, excelling at managing detailed and administrative tasks, making them trusted executors in teams. Psychologically, they tend to internalize norms and values, focusing on stability and controllable environments. Though sometimes seen as conservative or rigid, their rigor and perseverance ensure efficient achievement of goals, especially in roles requiring discipline and accountability. In interpersonal relationships, ISTJs may not openly express emotions, but they show care through actions, exemplifying a practical, action-oriented personality.",
     
-    "ISFJ": "ISFJ personalities are gentle and empathetic, attentive to others' needs, often providing help through practical action. They value stability and tradition, are patient and loyal in social settings, and excel in coordinating resources and maintaining harmony. Psychologically, ISFJs tend to guide their actions by internal values while considering practical feasibility, making them reliable and trustworthy members of both family and work teams. Though introverted, they demonstrate deep care within familiar circles. They sometimes over-sacrifice, needing to balance personal needs with others’ expectations to avoid emotional exhaustion. Their attention to detail and sense of responsibility allow them to excel in long-term project management and client relations.",
+  "ISTJ": "ISTJ – The Responsible Executor\nISTJs live by the motto: 'Rules are life.' You are like a human alarm clock, always punctual and reliable. People may think you are serious, but inside, you silently organize the world.\n\nOn the surface, you seem stern, but your feelings are deep. Friends see you as reliable, while you secretly enjoy humor and warmth.\n\nIn love, ISTJs are stable and attentive, remembering every little promise. \n\nStrengths: reliable, responsible, organized. Weaknesses: rigid, sometimes inflexible.\n\nOne-line: ISTJ is the 'reliable iron man' of life, silently keeping order.",
 
-    "INFJ": "INFJ individuals are insightful and idealistic, seeking a harmony between personal values and social meaning. They are adept at understanding others’ emotions and motives, and skillful at guiding and influencing their surroundings strategically. Psychologically, INFJs combine intuition and emotion to form deep worldviews and behavioral patterns. Typically introverted and reflective, they are extremely persistent with chosen goals, exhibiting autonomy and long-term planning abilities. They excel in complex interpersonal guidance and problem-solving, particularly for abstract or ethical issues. Their creativity and value orientation make them successful in art, education, and counseling. Potential challenges include over-idealization and self-criticism, requiring realistic adjustment and psychological self-care.",
+  "ISFJ": "ISFJ – The Gentle Guardian\nISFJs live by: 'Others happy, I’m happy.' You are like a small sun, remembering everyone's likes, birthdays, and snack preferences, creating little surprises.\n\nYou follow principles quietly and avoid conflicts. Friends see you as a warm-hearted nurse, but you have boundaries to protect your peace.\n\nIn love, ISFJs are thoughtful, remembering small preferences to make their partner feel cared for.\n\nStrengths: attentive, caring, reliable. Weaknesses: self-sacrificing, hesitant to ask.\n\nOne-line: ISFJ is the 'warm little blanket' quietly guarding the world.",
 
-    "INTJ": "INTJs are natural strategic thinkers, independent with foresight. They analyze complex systems, plan long-term, and rely on logic and strategy to achieve goals. Psychologically, they favor rational thinking and systematic analysis, valuing efficiency and control in behavior. Typically calm and reserved, they may appear emotionally distant but are extremely reliable in project management, research, and decision-making. They focus on structural depth and long-term trends rather than surface details. High autonomy and critical thinking allow them to identify hidden issues and improvement opportunities. A potential challenge is overemphasis on rationality, sometimes neglecting emotional needs, requiring enhanced emotional awareness in communication and teamwork.",
+  "INFJ": "INFJ – The Mysterious Dreamer\nINFJs believe: 'Imagination is my weapon.' You are like a wizard lighting up the dark, noticing what others cannot.\n\nRich inner world, life feels like a story. Friends see you as a counselor, but you need solitude.\n\nIn love, INFJs are deeply caring, planning surprises silently.\n\nStrengths: insightful, empathetic, strategic. Weaknesses: idealistic, easily exhausted.\n\nOne-line: INFJ is the 'mysterious planner', weaving magic with insight and kindness.",
 
-    "ISTP": "ISTP individuals are action-oriented, calm, and rational, excelling at hands-on problem-solving. They prefer direct experience and practical operation, showing high adaptability and quick judgment under pressure. Psychologically, ISTPs are logic- and reality-driven, focusing on results over theoretical reasoning. They thrive in technical, engineering, sports, or emergency management settings, quickly identifying problems and implementing practical solutions. Potential weaknesses include limited emotional expression, appearing distant or difficult to understand. Developing social and emotional sensitivity helps ISTPs function more effectively in teams.",
+  "INTJ": "INTJ – The Strategic Mastermind\nINTJs live by: 'Plans matter more than luck.' You are a chess master, predicting moves ahead. People see you as cold, but you are focused on your grand blueprint.\n\nIndependent and efficient, friends may find you hard to approach.\n\nIn love, INTJs are thoughtful and attentive, showing care through actions.\n\nStrengths: logical, goal-oriented, independent. Weaknesses: socially distant, inflexible.\n\nOne-line: INTJ is the 'strategic master', controlling life with logic and plans.",
 
-    "ISFP": "ISFPs are gentle, quiet, and artistic, valuing personal experience and aesthetic expression. Typically introverted, they are highly sensitive to subtle environmental changes. Psychologically, they are emotion-driven, focusing on beauty and value expression, enjoying self-expression through art, creativity, or nature activities. Behaviorally, they seek freedom and flexibility, disliking strict constraints or over-planning. ISFPs are observant and empathetic, expressing care through actions rather than words. Challenges may include conflict avoidance or difficulty maintaining structured tasks long-term. Their creativity, empathy, and adaptability allow them to excel in art, caregiving, and education.",
+  "ISTP": "ISTP – The Independent Adventurer\nISTPs live by: 'Action beats words.' You are a problem solver, fixing things instead of talking. People see you as calm, but you love freedom and novelty.\n\nPractical and adaptable, friends see you as mysterious yet cool.\n\nIn love, ISTPs are fun and direct, sharing adventures with their partner.\n\nStrengths: hands-on, calm, flexible. Weaknesses: reserved emotionally, easily misunderstood.\n\nOne-line: ISTP is the 'low-key adventurer', mastering the world through action.",
 
-    "INFP": "INFPs are idealistic, valuing inner beliefs and personal meaning, striving for purpose and self-realization. They are insightful to others’ emotions, empathetic, and highly sensitive to ideals and moral standards. Psychologically, INFPs explore abstract concepts and philosophical questions, often expressing themselves through writing, art, or thought. Introverted and reflective, they are extremely persistent in pursuing valued goals. Behaviorally, they prefer creative, unstructured thinking and are adept at uncovering potential possibilities. Potential drawbacks include limited practical handling, sometimes conflicting with reality. Their inner value orientation and empathy make them particularly strong in art, counseling, and psychotherapy.",
+  "ISFP": "ISFP – The Free Artist\nISFPs believe: 'Life is a canvas.' You can make ordinary days beautiful. People see you as gentle, but you are free-spirited with a small universe inside.\n\nYou enjoy the moment; friends see you as cute and mysterious.\n\nIn love, ISFPs show care through subtle gestures, not long speeches.\n\nStrengths: artistic, gentle, spontaneous. Weaknesses: dislike planning, prone to procrastination.\n\nOne-line: ISFP is the 'romantic wanderer', coloring the world with beauty and freedom.",
 
-    "INTP": "INTPs are logical, independent thinkers, skilled at analyzing complex concepts and theories. They prefer independent exploration and abstract thinking, adept at identifying patterns and potential problems in systems. Psychologically, INTPs rely on logical analysis and objective reasoning for decisions, tending to be rational, flexible, but sometimes appearing abstract or distant. They seek deep knowledge and understanding, enjoying challenging assumptions and authority. Introverted but intellectually active, they thrive in discussions and innovation. Challenges include limited emotional and social sensitivity, requiring development of expression and empathy. Their analytical ability and innovative spirit make them excel in research, technology, and strategic planning.",
+  "INFP": "INFP – The Idealist\nINFPs live by: 'The world should be gentle.' You are a poet, with endless stories in your mind. People see you as artistic; you immerse in fantasies.\n\nYou pursue ideals and truth, friends find you mysterious.\n\nIn love, INFPs are romantic and express affection through creativity.\n\nStrengths: kind, imaginative, empathetic. Weaknesses: idealistic, sensitive.\n\nOne-line: INFP is the 'gentle dreamer', warming the world with imagination.",
 
-    "ESTP": "ESTPs are action-oriented, energetic, and adventurous, adept at responding immediately to changing situations. They enjoy practice, challenges, and stimulation, making quick decisions in dynamic environments. Psychologically, ESTPs are extraverted and sensory-driven, valuing real-time feedback and experience. Behaviorally, they are flexible, adaptive, and skillful at identifying opportunities and risks. Socially active, they influence environments through interaction and action. Potential drawbacks include lack of long-term planning, possibly overlooking future consequences. ESTPs excel in emergency management, sports, sales, or entrepreneurship, leveraging keen insight and execution ability.",
+  "INTP": "INTP – The Analytical Philosopher\nINTPs live by: 'Think first, act later.' You analyze everything, even trivial matters. People see you as cold, but you are absorbed in thought.\n\nCurious and creative, friends find you quirky and smart.\n\nIn love, INTPs are clever and witty, using ideas to charm.\n\nStrengths: intelligent, logical, independent. Weaknesses: poor emotional expression, procrastination.\n\nOne-line: INTP is the 'logic detective', exploring the world with reason and creativity.",
 
-    "ESFP": "ESFPs are outgoing, enthusiastic, and optimistic, enjoying interaction and immediate experiences. They excel at energizing environments, displaying vitality and charisma. Psychologically, ESFPs are emotionally and sensory-driven, valuing immediate feedback and relationship quality. Typically perceptive, they detect subtle changes and social cues. Preferring flexible and free lifestyles, they dislike rigid rules. Weaknesses may include insufficient long-term planning and patience, potentially delaying goals. Their social skills, expressiveness, and adaptability make them charismatic in entertainment, education, sales, and public events.",
+  "ESTP": "ESTP – The Energetic Doer\nESTPs live by: 'Act fast, live fast.' You are a party engine, energizing everyone. People see you as outgoing; you love freedom and excitement.\n\nBold and adaptable, friends see you as fun and reliable.\n\nIn love, ESTPs are direct and adventurous, bringing thrill to their partner.\n\nStrengths: energetic, proactive, adaptable. Weaknesses: impulsive, not detail-oriented.\n\nOne-line: ESTP is the 'adventure accelerator', igniting ordinary days.",
 
-    "ENFP": "ENFPs are creative, inspiring, energetic, and exploratory. They enjoy trying new things, discovering possibilities, and motivating or inspiring others. Psychologically, ENFPs are intuition- and emotion-driven, thinking divergently and analyzing problems from multiple angles. Extraverted and expressive, they are socially skilled and often drive team energy. Potential drawbacks include difficulty maintaining focus, sometimes overly investing in short-term interests, neglecting details or execution. Their creativity, enthusiasm, and insight make them excel in creative fields, entrepreneurship, consulting, and education.",
+  "ESFP": "ESFP – The Joyful Performer\nESFPs believe: 'Life should be fun.' You turn ordinary moments into a show. People see you as lively; you sense everyone's emotions keenly.\n\nInteractive and cheerful, friends find you adorable.\n\nIn love, ESFPs are passionate and show love through actions.\n\nStrengths: enthusiastic, humorous, social. Weaknesses: easily distracted, impatient.\n\nOne-line: ESFP is the 'happiness generator', spreading laughter everywhere.",
 
-    "ENTP": "ENTPs are witty, innovative, and adept at analyzing complex problems to propose novel solutions. They are extraverted, flexible thinkers, enjoying debate and exploration of possibilities. Psychologically, ENTPs combine logic and intuition, quickly adapting and recognizing opportunities. Confident and strategic, they challenge the status quo and seek improvement. Potential drawbacks include lack of patience, possibly neglecting execution or long-term consequences. Their innovation, strategic insight, and communication skills give them natural advantages in business, entrepreneurship, technology, and creative planning.",
+  "ENFP": "ENFP – The Passionate Explorer\nENFPs live by: 'The world is worth exploring.' You discover fun and novelty. People see you as energetic; you love trying and connecting.\n\nCreative and curious, friends find you humorous.\n\nIn love, ENFPs are romantic, surprising their partner with creativity.\n\nStrengths: passionate, imaginative, social. Weaknesses: distracted, impatient.\n\nOne-line: ENFP is the 'vitality explorer', lighting up the world with passion.",
 
-    "ESTJ": "ESTJs are organized, efficient, and goal-oriented, excelling in managing tasks, teams, and resources. They value control and practical outcomes. Psychologically, ESTJs are extraverted and thinking-driven, logical, decisive, and like establishing rules and ensuring compliance. Typically pragmatic and assertive, they assess risks and plan effectively. Potential weaknesses include sensitivity to flexibility and emotional needs, sometimes appearing overbearing or conservative. ESTJs’ organizational ability, execution, and sense of responsibility make them excel in management, administration, and engineering.",
+  "ENTP": "ENTP – The Creative Debater\nENTPs live by: 'Debate is fun.' You spark new ideas, keeping things fresh. People see you as witty, slightly provocative, enjoying mental challenges.\n\nCurious and humorous, friends find you smart and quirky.\n\nIn love, ENTPs charm with words and creativity.\n\nStrengths: witty, creative, quick-thinking. Weaknesses: distracted, unstable.\n\nOne-line: ENTP is the 'creative spark', igniting life with humor and intelligence.",
 
-    "ESFJ": "ESFJs are warm, attentive, and socially responsible, sensitive to others’ needs, maintaining harmony in teams or families. Psychologically, ESFJs are extraverted and emotion-driven, emphasizing practical support. They are reliable, patient, communicative, and skilled at building trust and cooperation. Potential challenges include over-concern with others’ evaluation, leading to stress or self-sacrifice. Their coordination ability, responsibility, and social intelligence make them valuable in education, caregiving, customer service, and team management.",
+  "ESTJ": "ESTJ – The Organized Manager\nESTJs live by: 'Rules equal security.' You turn chaos into order. People see you as strong, but you just love efficiency and clarity.\n\nReliable and proactive, friends find you strict yet dependable.\n\nIn love, ESTJs are responsible and direct, keeping life organized.\n\nStrengths: reliable, decisive, organized. Weaknesses: domineering, inflexible.\n\nOne-line: ESTJ is the 'order commander', making the world orderly through efficiency.",
 
-    "ENFJ": "ENFJs are empathetic leaders, adept at understanding and motivating others. They perceive team or individual needs and strategically guide goal achievement. Psychologically, ENFJs are extraverted and emotion-driven, valuing social contribution and relationship building. Typically enthusiastic, communicative, and organized, they inspire team potential. Challenges include over-responsibility, possibly neglecting self-needs. ENFJs’ leadership, insight, and motivational ability make them excel in education, management, public affairs, and consulting.",
+  "ESFJ": "ESFJ – The Sociable Caregiver\nESFJs live by: 'Everyone happy, I’m happy.' You notice emotions and create joy. People see you as approachable; you are attentive and organized.\n\nYou care for others and plan gatherings. Friends find you sweet and fun.\n\nIn love, ESFJs show care through actions.\n\nStrengths: warm, attentive, social. Weaknesses: overly concerned with others' opinions.\n\nOne-line: ESFJ is the 'social warm hug', making everyone feel cared for.",
 
-    "ENTJ": "ENTJs are natural strategists, focused on goals, efficiency, and execution. They analyze complex problems, plan systematically, and implement strategies to achieve objectives. Psychologically, ENTJs are extraverted and thinking-driven, decisive, and possess strong leadership desire. Typically confident, rational, and organized, they effectively motivate teams. Potential drawbacks include low emotional sensitivity, sometimes appearing cold or domineering. ENTJs’ strategic vision, decision-making, and execution ability make them excel in management, entrepreneurship, strategic planning, and technical leadership."
-  
-    }
+  "ENFJ": "ENFJ – The Charming Leader\nENFJs live by: 'Influence starts with those around you.' You inspire and energize. People see you as warm and leader-like; you observe others’ needs closely.\n\nYou communicate and motivate well. Friends find you charismatic.\n\nIn love, ENFJs are attentive and caring.\n\nStrengths: leadership, empathetic, enthusiastic. Weaknesses: worry too much, neglect self.\n\nOne-line: ENFJ is the 'charming guide', lighting up the world with warmth and influence.",
+
+  "ENTJ": "ENTJ – The Decisive Executor\nENTJs live by: 'Clear goals, everything achievable.' You turn ideas into action, leading others. People see you as strong; you value efficiency.\n\nDecisive and strategic, friends see you as powerful and reliable.\n\nIn love, ENTJs are rational yet devoted, aligning goals with their partner.\n\nStrengths: decisive, strategic, leadership. Weaknesses: focus on goals may neglect emotions.\n\nOne-line: ENTJ is the 'CEO of life', controlling life with decisiveness and strategy."
+}
+
+    
   },
   "ja": {
     "start_title": "性格テストへようこそ",
@@ -185,211 +509,224 @@
     "checkout_btn_stripe": "クレジットカードで支払う",
     "checkout_desc_paypay": "QRコードをスキャンして PayPay で {amount} 円を支払う",
     "checkout_back_quiz": "テストに戻る",
-    "questions": [{
-      "q": "新しい環境に入るとき、あなたはまず何をしますか？",
+    "questions": [
+    {
+      "q": "放課後、宿題が終わっていないことに気づいたらどうする？",
       "options": {
-        "慎重に観察してから行動する": "I",
-        "積極的に交流して状況を把握する": "E",
-        "自分の直感に従って行動する": "N",
-        "詳細やルールに従って行動する": "S"
+        "素直に家に帰って終わらせる": "J",
+        "寝る前までずるずる引き延ばす": "P",
+        "歩きながら宿題が勝手に終わることを想像する": "N",
+        "宿題ロボを召喚する": "S"
       }
     },
     {
-      "q": "日常生活での意思決定はどう行いますか？",
+      "q": "友達や同僚が変なイベントに誘ってきたら？",
       "options": {
-        "論理や事実に基づいて決める": "T",
-        "感情や人間関係を重視して決める": "F",
-        "柔軟に状況に合わせて決める": "P",
-        "計画やスケジュールに従って決める": "J"
+        "計画通りか確認してから行く": "J",
+        "その場の気分で参加する": "P",
+        "イベントの裏で起きるドラマを想像する": "N",
+        "現場の雰囲気を見てから判断": "S"
       }
     },
     {
-      "q": "あなたは問題解決においてどのスタイルですか？",
+      "q": "突然しゃべる猫が部屋に現れたら？",
       "options": {
-        "実践的で現実的な方法を取る": "S",
-        "概念的・抽象的な視点で考える": "N",
-        "論理と分析を重視する": "T",
-        "感情や価値観を重視する": "F"
+        "正体と目的を聞く": "T",
+        "かわいさを感じてから考える": "F",
+        "未来の自分の化身だと想像する": "N",
+        "普段通り生活を続ける": "S"
       }
     },
     {
-      "q": "社交の場でのあなたの傾向は？",
+      "q": "朝、目覚ましが三回鳴ったら？",
       "options": {
-        "静かに観察してから話す": "I",
-        "積極的に話しかける": "E",
-        "深い人間関係を築く": "F",
-        "多くの人と幅広く関わる": "T"
+        "予定通りに起きる": "J",
+        "もう少し寝るためにスヌーズ": "P",
+        "目覚ましが時間を止めてくれることを想像": "N",
+        "夢の冒険を続ける": "S"
       }
     },
     {
-      "q": "仕事や学習での計画性は？",
+      "q": "謎のチケットを手に入れたら？",
       "options": {
-        "詳細な計画を立てて進める": "J",
-        "柔軟に対応しながら進める": "P",
-        "直感で優先順位を決める": "N",
-        "既存の手順やルールに従う": "S"
+        "攻略を調べて計画する": "J",
+        "適当に出かけて運任せで楽しむ": "P",
+        "チケットの裏に異世界が隠されていると想像": "N",
+        "周りの反応を見てから決める": "S"
       }
     },
     {
-      "q": "自由時間の過ごし方は？",
+      "q": "植物の言葉が聞こえるようになったら？",
       "options": {
-        "友人と交流して楽しむ": "E",
-        "一人で読書や趣味に没頭する": "I",
-        "新しい体験や冒険を試す": "N",
-        "落ち着いた活動で安定を求める": "S"
+        "要求を記録して科学的に分析する": "T",
+        "慰めて、自分の気持ちも話す": "F",
+        "植物は宇宙人のスパイだと想像する": "N",
+        "普段通り過ごし、たまに聞く": "S"
       }
     },
     {
-      "q": "あなたの物事への取り組み方は？",
+      "q": "翻訳アプリが日本語を間違えていたら？",
       "options": {
-        "計画的で慎重": "J",
-        "柔軟で臨機応変": "P",
-        "直感やひらめき重視": "N",
-        "現実的で確実な方法": "S"
+        "辞書で調べて正す": "J",
+        "適当に読み流す": "P",
+        "面白い翻訳を自作する": "N",
+        "大意を理解できればOK": "S"
       }
     },
     {
-      "q": "他人に対する姿勢は？",
+      "q": "放課後/仕事帰りに変な風が吹いてきたら？",
       "options": {
-        "感情や気持ちに敏感": "F",
-        "論理や公平性を重視": "T",
-        "長期的な信頼関係を重視": "J",
-        "柔軟に状況に合わせる": "P"
+        "すぐ家に帰る": "J",
+        "風を楽しんでルートを適当に決める": "P",
+        "風の中に未知の生物がいると想像": "N",
+        "風に身を任せて自由に漂う": "S"
       }
     },
     {
-      "q": "変化や不確実な状況への対応は？",
+      "q": "机の上に謎のボタンがあったら？",
       "options": {
-        "柔軟に適応する": "P",
-        "計画や予測を重視する": "J",
-        "直感で判断する": "N",
-        "確実性と経験に頼る": "S"
+        "結果を考えてから押す": "J",
+        "好奇心で即押す": "P",
+        "押すと世界が変わると想像": "N",
+        "他人の様子を見てから決める": "S"
       }
     },
     {
-      "q": "仕事や学習での集中スタイルは？",
+      "q": "深夜オンラインで人狼ゲームに誘われたら？",
       "options": {
-        "一つのことに深く集中する": "I",
-        "複数のことを同時進行で管理する": "E",
-        "感情や雰囲気を重視して進める": "F",
-        "論理や効率を重視して進める": "T"
+        "事前に作戦を練る": "J",
+        "適当にプレイする": "P",
+        "自分が本当に人狼だと想像する": "N",
+        "チームメイトの行動を観察": "S"
       }
     },
     {
-      "q": "リーダーシップを取るとき、重視するのは？",
+      "q": "カフェで変な限定ドリンクが出たら？",
       "options": {
-        "目標と効率": "T",
-        "チームの調和や士気": "F",
-        "規律や計画の遵守": "J",
-        "柔軟性と臨機応変": "P"
+        "レビューを見てから試す": "J",
+        "衝動で買ってみる": "P",
+        "飲むと不思議な能力が出ると想像": "N",
+        "まず匂いを嗅いで判断": "S"
       }
     },
     {
-      "q": "あなたの情報収集スタイルは？",
+      "q": "夢で巨大なタコになったら？",
       "options": {
-        "観察や経験に基づく": "S",
-        "直感や洞察に基づく": "N",
-        "論理的分析を重視": "T",
-        "感情や価値観を重視": "F"
+        "夢を記録して分析": "T",
+        "夢を楽しむ": "F",
+        "海の世界を征服する想像": "N",
+        "普段通りの行動を続ける": "S"
       }
     },
     {
-      "q": "意思決定で迷ったとき、どちらに傾きますか？",
+      "q": "謎の宅配で全部アヒルのゴム製品が届いたら？",
       "options": {
-        "心の声や直感に従う": "N",
-        "経験や事実に基づく": "S",
-        "感情や他者への影響を重視": "F",
-        "論理的に整理して決める": "T"
+        "整理して出所を調べる": "J",
+        "適当に置いて楽しむ": "P",
+        "アヒルの背後に秘密組織があると想像": "N",
+        "机に置いて写真を撮る": "S"
       }
     },
     {
-      "q": "あなたは締め切りやルールに対して？",
+      "q": "地下鉄で変な楽器を演奏していたら？",
       "options": {
-        "厳密に守る": "J",
-        "柔軟に調整する": "P",
-        "必要に応じて順応": "S",
-        "直感で対応": "N"
+        "演奏を真剣に聴き分析": "T",
+        "ノリで楽しむ": "F",
+        "演奏者は平行世界から来たと想像": "N",
+        "通り過ぎながらリズムに合わせる": "S"
       }
     },
     {
-      "q": "人とのコミュニケーションで重要視するのは？",
+      "q": "スマホに「時間を操れます」と表示されたら？",
       "options": {
-        "率直で論理的": "T",
-        "共感や感情の理解": "F",
-        "調整と信頼関係": "J",
-        "柔軟で臨機応変": "P"
+        "綿密な計画を立てる": "J",
+        "適当に試してみる": "P",
+        "未来世界での冒険を想像": "N",
+        "無視してスマホを使い続ける": "S"
       }
     },
     {
-      "q": "課題に取り組むとき、どの方法が多い？",
+      "q": "学校/オフィスにミニ竜巻が出現したら？",
       "options": {
-        "段階的で計画的": "J",
-        "直感的で柔軟": "P",
-        "分析的で論理的": "T",
-        "感覚的で経験重視": "S"
+        "安全に皆を避難させる": "J",
+        "風と遊ぶ": "P",
+        "宇宙人の探検だと想像": "N",
+        "風の軌道を見て避ける": "S"
       }
     },
     {
-      "q": "日常生活で重視するのは？",
+      "q": "机の上に話すプリンターが現れたら？",
       "options": {
-        "秩序と安定": "S",
-        "革新と可能性": "N",
-        "効率と目標達成": "T",
-        "感情や調和": "F"
+        "プリンターが何を印刷したいか聞く": "T",
+        "プリンターの気持ちを気にする": "F",
+        "未来型AIだと想像": "N",
+        "自分の印刷を続ける": "S"
       }
     },
     {
-      "q": "新しいアイデアに対する態度は？",
+      "q": "天気を操れるとしたら？",
       "options": {
-        "積極的に試す": "N",
-        "確実性や経験を重視": "S",
-        "論理的に検証": "T",
-        "感情や影響を考慮": "F"
+        "仕事や学習に合わせて調整": "J",
+        "気ままに変化させる": "P",
+        "天気が奇妙な冒険をもたらすと想像": "N",
+        "風に任せて体験": "S"
       }
     },
     {
-      "q": "自分の性格を最もよく表す言葉は？",
+      "q": "図書館に突然ワープゲートが現れたら？",
       "options": {
-        "計画的で秩序ある": "J",
-        "柔軟で自由": "P",
-        "理論的で分析的": "T",
-        "直感的で想像力豊か": "N"
+        "リスクを分析して判断": "J",
+        "勢いで飛び込む": "P",
+        "現実より楽しい世界だと想像": "N",
+        "他の人の動きを見てから": "S"
+      }
+    },
+    {
+      "q": "深夜、家具が勝手に踊り出したら？",
+      "options": {
+        "整頓して秩序を戻す": "J",
+        "一緒に踊って楽しむ": "P",
+        "家具が古代の儀式をしていると想像": "N",
+        "黙って見て自分は作業を続ける": "S"
       }
     }
     ],
     "results": {
-    "ISTJ": "ISTJタイプの人は、規律正しく秩序を重んじ、ルール、制度、責任感を非常に重視します。日常生活や仕事において、計画に沿った構造化された方法で行動する傾向があり、直感や即興判断よりも実用性を優先します。ISTJは通常、信頼性が高く安定しており、細部や事務的な業務の管理に優れ、チーム内で信頼される実行者となります。心理的には規範や価値観を内面化し、安定した管理可能な環境を重視します。保守的または硬直的に見えることもありますが、彼らの厳密さと粘り強さは目標の効率的達成を保証し、特に規律と責任感が求められる役割に適しています。対人関係では感情表現は控えめですが、行動を通じて配慮を示す典型的な実務型人格です。",
 
-    "ISFJ": "ISFJタイプの人は、温和で共感力があり、他人のニーズに注意を払い、実際の行動を通じて支援することが多いです。安定性や伝統を重視し、社交の場では忍耐強く忠実であり、リソースや人間関係の調整に優れています。心理学的には、内面的価値観を行動の指針としつつ、現実的な実行可能性も重視し、家庭や職場で信頼される存在です。内向的ですが、親しい人々には深い配慮を示します。自己犠牲が過度になることもあり、感情的消耗を避けるためには、自身のニーズと他者の期待のバランスを取る必要があります。細部への観察力と責任感により、長期的なプロジェクト管理や顧客対応で優れた成果を発揮します。",
+  "ISTJ": "ISTJ – 責任感のある実行者\nISTJは「ルールが人生」と信じる。まるで人間目覚まし時計のように、常に時間通りで頼れる存在。真面目に見えるが、心の中では世界を整理している。\n\n表面は厳しそうだが感情は深い。友達からは頼れる存在、内心はユーモアと温かさを楽しむ。\n\n恋愛では、約束をしっかり覚え、安定して相手に寄り添う。\n\n長所：信頼できる、責任感、整理整頓。短所：融通が利かない、頑固。\n\n一言：ISTJは『人生の鉄人』、黙々と秩序を守る。",
 
-    "INFJ": "INFJタイプの人は洞察力があり理想主義的で、個人の価値と社会的意味の統合を追求します。他人の感情や動機を敏感に理解し、戦略的に周囲を導く能力に長けています。心理学的には、直感と感情を組み合わせて情報を分析し、深い世界観や行動パターンを形成します。内向的で熟慮型ですが、目標に対して非常に執着心が強く、高い自主性と長期的計画能力を持ちます。複雑な人間関係の中で指導や支援に優れ、抽象的・倫理的課題の解決にも適しています。創造的思考と価値志向により、芸術、教育、カウンセリングなどの分野で活躍します。過度の理想化や自己批判が課題となることがあり、現実的調整と心理的セルフケアが必要です。",
+  "ISFJ": "ISFJ – 優しい守護者\nISFJは「他人が幸せなら私も幸せ」と考える。小さな太陽のように、みんなの好みや誕生日、おやつの好みまで覚えている。\n\n静かに原則を守り、衝突を避ける。友達からは温かいナースのように見えるが、自分の平和を守る境界線も持つ。\n\n恋愛では、相手の小さな好みを覚えて、さりげなく気遣う。\n\n長所：気配り、思いやり、信頼性。短所：自己犠牲、頼みごとが苦手。\n\n一言：ISFJは『温かい毛布』、世界をそっと守る。",
 
-    "INTJ": "INTJタイプの人は生まれつき戦略的思考者で、独立心が強く先見の明を持っています。複雑なシステムを分析し、長期計画を立て、論理と戦略で目標を達成します。心理学的には、合理的思考と体系的分析を好み、効率性と制御可能性を重視します。冷静で内向的なことが多く、感情表現は控えめですが、プロジェクト管理や研究、意思決定では非常に信頼できます。表面的な細部よりも構造的深さや長期的傾向に注目します。高度な自主性と批判的思考により、潜在的問題や改善策を見出すことができます。課題は理性を重視しすぎて感情的ニーズを軽視することがあり、コミュニケーションやチーム協力で感情認識力を高める必要があります。",
+  "INFJ": "INFJ – 謎めいた夢想家\nINFJは「想像力が武器」と信じる。人の気付かないものに気付く魔法使いのよう。\n\n内面は豊かで、人生は物語のよう。友達からはカウンセラーのように見えるが、一人の時間も必要。\n\n恋愛では、静かにサプライズを計画して相手を大切にする。\n\n長所：洞察力、共感力、戦略的。短所：理想主義、疲れやすい。\n\n一言：INFJは『謎の計画者』、洞察と優しさで魔法を紡ぐ。",
 
-    "ISTP": "ISTPタイプの人は行動志向で冷静かつ合理的、実践的な問題解決に優れています。直接経験や実操作を好み、プレッシャー下で高い適応力と迅速な判断力を発揮します。心理学的には、論理と現実志向で、理論よりも実効性や成果を重視します。技術、工学、スポーツ、緊急管理の分野で優れた能力を発揮し、問題を迅速に特定して実用的な解決策を提案できます。課題は感情表現が不足しがちで、疎遠または理解されにくい印象を与えることがあります。社会的・感情的感受性を発展させることで、チーム内でより効果的に活躍できます。",
+  "INTJ": "INTJ – 戦略的マスターマインド\nINTJは「計画が運より大事」と考える。チェスマスターのように先を読む。冷たく見えるが、大きな設計図に集中している。\n\n独立心が強く、友達には近寄りがたい印象。\n\n恋愛では、思慮深く行動で愛を示す。\n\n長所：論理的、目標志向、独立。短所：社交的距離感、柔軟性に欠ける。\n\n一言：INTJは『戦略の達人』、論理と計画で人生を制する。",
 
-    "ISFP": "ISFPタイプの人は優しく静かで芸術的、個人的体験や感覚を重視します。内向的であることが多いですが、環境の微細な変化に非常に敏感です。心理学的には感情に基づく行動を取り、美的価値や自己表現を重視し、芸術・創造・自然活動を通じて自己を表現します。行動面では自由と柔軟性を求め、厳格な制約や過度な計画を嫌います。他者への観察力と共感力が高く、言葉より行動で配慮を示します。課題は衝突回避や構造化タスクの長期継続が難しいことがあります。創造力、共感力、適応力により、芸術、ケア、教育分野で優れた成果を上げます。",
+  "ISTP": "ISTP – 独立した冒険者\nISTPは「行動は言葉に勝る」と信じる。問題解決者で、口より手を動かす。冷静に見えるが自由と新奇を愛する。\n\n実践的で適応力が高く、友達からはクールで神秘的。\n\n恋愛では、直接的で冒険心溢れる。\n\n長所：実践的、冷静、柔軟。短所：感情表現控えめ、誤解されやすい。\n\n一言：ISTPは『控えめな冒険者』、行動で世界を制す。",
 
-    "INFP": "INFPタイプの人は典型的理想主義者で、内面的価値観と個人の信念を重視し、意味や自己実現を追求します。他人の感情に洞察力を持ち、共感力が高く、理念や道徳基準に敏感です。心理学的には抽象概念や哲学的課題を探求し、執筆、芸術、思考を通じて自己表現します。内向的で熟考型ですが、価値ある目標には非常に執着します。行動面では創造的で非構造的思考を好み、潜在的可能性の発見に長けています。課題は現実的処理能力が限定的で、理想と現実の衝突が生じることがあります。内面的価値志向と共感力により、芸術、カウンセリング、心理療法で独自の強みを発揮します。",
+  "ISFP": "ISFP – 自由なアーティスト\nISFPは「人生はキャンバス」と考える。平凡な日も美しく変える力を持つ。穏やかに見えるが内面は自由な宇宙。\n\n今を楽しむ性格。友達からは可愛く神秘的。\n\n恋愛では、言葉よりさりげない行動で愛を示す。\n\n長所：芸術的、優しい、自由。短所：計画嫌い、先延ばし。\n\n一言：ISFPは『ロマンチックな放浪者』、美と自由で世界を彩る。",
 
-    "INTP": "INTPタイプの人は論理的で独立した思考者、複雑な概念や理論の分析を得意とします。独立探索や抽象的思考を好み、システム内の規則や潜在問題の発見に長けています。心理学的には論理分析と客観的推論を意思決定の基盤とし、理性的で柔軟ですが、抽象的または距離を置いた印象を与えることがあります。知識と理解の深さを追求し、伝統的仮説や権威に挑戦することを楽しみます。内向的ですが、思想交流や革新的議論では非常に活発です。課題は感情や社会的感受性が不足しがちなことで、表現力と共感能力の発展が必要です。分析力と革新力により、研究、技術、戦略計画で卓越した成果を発揮します。",
+  "INFP": "INFP – 理想主義者\nINFPは「世界は優しくあるべき」と信じる。詩人のように心に物語を持つ。幻想に浸る。\n\n理想と真実を追求し、友達からは神秘的。\n\n恋愛では、創造的でロマンチック。\n\n長所：優しい、想像力豊か、共感力。短所：理想主義、敏感。\n\n一言：INFPは『優しい夢想家』、想像力で世界を温める。",
 
-    "ESTP": "ESTPタイプの人は行動志向でエネルギッシュ、冒険心があり、変化する状況に迅速に対応します。実践や挑戦、刺激を好み、ダイナミックな環境で迅速に意思決定を行います。心理学的には外向的で感覚志向、現実のフィードバックや即時体験を重視します。行動面では柔軟で適応力が高く、機会やリスクを素早く識別します。社交的で、交流や行動を通じて環境に影響を与えます。課題は長期的計画の欠如で、将来の影響を見落とすことがあります。緊急管理、スポーツ、販売、起業などで敏感な洞察力と実行力を活かして活躍します。",
+  "INTP": "INTP – 分析哲学者\nINTPは「まず考え、後で行動」と信じる。全てを分析し、些細なことも深く考える。冷たく見えるが思考に没頭。\n\n好奇心旺盛で創造的。友達からはユニークで賢い。\n\n恋愛では、知性と機知で魅了。\n\n長所：知的、論理的、独立。短所：感情表現苦手、先延ばし。\n\n一言：INTPは『論理の探偵』、理性と創造で世界を探求。",
 
-    "ESFP": "ESFPタイプの人は外向的で熱情的、楽観的で、人との交流や現在の体験を楽しみます。環境を活気づけ、活力と魅力を発揮します。心理学的には感情と感覚志向で、即時のフィードバックや人間関係の質を重視します。直感的で微細な変化や社会的サインを察知します。柔軟で自由な生活様式を好み、硬直的な規則を嫌います。課題は長期的計画や忍耐力の不足で、目標達成の遅延につながることがあります。社交能力、表現力、適応力により、エンターテインメント、教育、販売、公共イベントで魅力を発揮します。",
+  "ESTP": "ESTP – エネルギッシュな行動派\nESTPは「即行動、即楽しむ」と信じる。パーティーエンジンのように盛り上げる。自由と刺激を愛する。\n\n大胆で順応性高く、友達からは面白く頼れる。\n\n恋愛では、率直で冒険心に溢れる。\n\n長所：エネルギッシュ、積極的、適応力。短所：衝動的、細かい注意不足。\n\n一言：ESTPは『冒険の加速装置』、日常に刺激をもたらす。",
 
-    "ENFP": "ENFPタイプの人は創造的で刺激的、エネルギッシュで探求心旺盛です。新しいことを試し、可能性を発見し、他者を励まし刺激することを楽しみます。心理学的には直感と感情志向で、多角的に思考し問題を分析します。外向的で表現力があり、チームの雰囲気を盛り上げます。課題は集中力の維持が難しく、短期的興味に過度に投資して細部や実行を疎かにすることがあります。創造性、熱意、洞察力により、クリエイティブ分野、起業、コンサルティング、教育で優れた成果を発揮します。",
+  "ESFP": "ESFP – 楽しいパフォーマー\nESFPは「人生は楽しく」と考える。平凡な瞬間をショーに変える。感情に敏感で活発。\n\n社交的で明るく、友達からは可愛い。\n\n恋愛では、情熱的に行動で愛を示す。\n\n長所：熱心、ユーモア、社交的。短所：注意散漫、短気。\n\n一言：ESFPは『幸福発電機』、笑顔をまき散らす。",
 
-    "ENTP": "ENTPタイプの人は機知に富み革新的、複雑な問題を分析し新しい解決策を生み出す能力に優れています。外向的で柔軟な思考を持ち、討論や可能性の探求を楽しみます。心理学的には論理と直感を組み合わせ、環境に素早く適応し機会を識別します。自信と戦略的思考があり、現状に挑戦し改善を追求します。課題は忍耐力不足で、実行や長期的影響を軽視することがあります。革新力、戦略的洞察、コミュニケーション能力により、ビジネス、起業、技術開発、創造的企画で自然な優位性を発揮します。",
+  "ENFP": "ENFP – 情熱的な探検者\nENFPは「世界は探検に値する」と考える。楽しさと新奇を発見。エネルギッシュで人とつながるのが好き。\n\n創造的で好奇心旺盛、友達からは面白くユーモラス。\n\n恋愛では、創意工夫で相手を驚かせる。\n\n長所：情熱的、想像力豊か、社交的。短所：注意散漫、短気。\n\n一言：ENFPは『活力探検者』、情熱で世界を照らす。",
 
-    "ESTJ": "ESTJタイプの人は組織的で効率的、目標志向で、業務やチーム、リソースの管理に優れます。制御と実際的成果を重視します。心理学的には外向的で思考志向、論理的で行動力があり、ルールを制定し遵守を確実にします。通常、実務的で決断力があり、リスク評価と計画立案に長けています。課題は柔軟性や感情的ニーズへの敏感さが低く、強引または保守的に見えることがあります。ESTJの組織力、実行力、責任感により、管理、行政、工学分野で優れた成果を発揮します。",
+  "ENTP": "ENTP – 創造的な討論者\nENTPは「議論は楽しい」と信じる。新しいアイデアで刺激的。ウィットに富み、少し挑発的。\n\n好奇心旺盛でユーモラス、友達からは賢くて変わってる。\n\n恋愛では、言葉と創造で魅了。\n\n長所：機知、創造力、瞬発力。短所：気が散りやすい、不安定。\n\n一言：ENTPは『創造の火花』、ユーモアと知性で人生を燃やす。",
 
-    "ESFJ": "ESFJタイプの人は温かく思いやりがあり、社会的責任感を重視します。他者のニーズに敏感で、チームや家庭の調和を維持します。心理学的には外向的で感情志向、実践的な支援行動を重視します。信頼でき、忍耐強く、コミュニケーションと調整に優れ、信頼関係を築き協力を促します。課題は他者の評価を過度に気にしてストレスや自己犠牲につながることがあります。調整力、責任感、社会的知性により、教育、介護、カスタマーサービス、チーム管理で高い価値を発揮します。",
+  "ESTJ": "ESTJ – 組織のマネージャー\nESTJは「ルールは安全」と考える。混沌を秩序に変える。強く見えるが効率と明快さが好き。\n\n信頼性が高く、友達からは厳しいが頼れる。\n\n恋愛では、責任感を持ち、生活を整理する。\n\n長所：信頼性、決断力、整理整頓。短所：支配的、柔軟性に欠ける。\n\n一言：ESTJは『秩序の指揮官』、効率で世界を整える。",
 
-    "ENFJ": "ENFJタイプの人は共感力のあるリーダーで、他者の理解や動機づけに長けています。チームや個人のニーズを洞察し、戦略的に目標達成を導きます。心理学的には外向的で感情志向、社会的価値と関係構築を重視します。熱意があり、コミュニケーションや組織運営に優れ、チームの潜在能力を引き出します。課題は責任を引き受けすぎて自己のニーズを軽視することがあります。ENFJのリーダーシップ、洞察力、動機づけ能力により、教育、管理、公共事務、コンサルティングで卓越した成果を発揮します。",
+  "ESFJ": "ESFJ – 社交的なケアギバー\nESFJは「みんなが幸せなら私も幸せ」と考える。感情に敏感で喜びを作る。\n\n他人を気遣い、イベントも計画。友達からは可愛く楽しい。\n\n恋愛では、行動で愛を示す。\n\n長所：温かい、気配り、社交的。短所：他人の意見を気にしすぎる。\n\n一言：ESFJは『社交的なハグ』、みんなを大切にする。",
 
-    "ENTJ": "ENTJタイプの人は生まれつきの戦略家で、目標、効率、実行力を重視します。複雑な問題を分析し、体系的に計画を立て、戦略を実行して目標を達成します。心理学的には外向的で思考志向、決断力があり強いリーダー欲求を持ちます。自信があり理性的で組織力があり、チームを効果的に動機づけます。課題は感情への敏感さが低く、冷淡または強圧的に見えることがあります。ENTJの戦略的視野、意思決定力、実行力により、管理、起業、戦略計画、技術リーダーシップで卓越した成果を発揮します。"
-    }
+  "ENFJ": "ENFJ – 魅力的なリーダー\nENFJは「影響は周囲から」と信じる。人を元気づけ、刺激する。温かく、観察力に優れる。\n\nコミュニケーションとモチベーションが得意。友達からはカリスマ的。\n\n恋愛では、細やかで思いやり深い。\n\n長所：リーダーシップ、共感力、熱意。短所：心配しすぎ、自分を後回し。\n\n一言：ENFJは『魅力的な案内人』、温かさで世界を照らす。",
+
+  "ENTJ": "ENTJ – 決断力ある実行者\nENTJは「目標明確、全て達成可能」と考える。アイデアを行動に移し、他人を導く。\n\n決断力と戦略性に優れ、友達からは強く頼れる。\n\n恋愛では、理性的だが献身的、目標を共有する。\n\n長所：決断力、戦略的、リーダーシップ。短所：目標重視で感情軽視。\n\n一言：ENTJは『人生のCEO』、決断と戦略で人生を制す。"
+
+
+  }
   }
 }
        
