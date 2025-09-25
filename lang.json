@@ -23,6 +23,7 @@
     "checkout_btn_stripe": "使用信用卡支付",
     "checkout_desc_paypay": "扫码支付金额 {amount} JPY",
     "checkout_back_quiz": "返回题目",
+    "quiz_restart": "重新测试",
     "questions":[
     {
       "q": "放学后发现作业没写完，你会怎么做？",
@@ -266,6 +267,7 @@
     "checkout_btn_stripe": "Pay with Credit Card",
     "checkout_desc_paypay": "Scan QR to pay {amount} JPY via PayPay",
     "checkout_back_quiz": "Back to Quiz",
+    "quiz_restart": "Restart Quiz",
     "questions": [
     {
       "q": "After school/work, you realize your homework/tasks aren’t done. What do you do?",
@@ -509,6 +511,7 @@
     "checkout_btn_stripe": "クレジットカードで支払う",
     "checkout_desc_paypay": "QRコードをスキャンして PayPay で {amount} 円を支払う",
     "checkout_back_quiz": "テストに戻る",
+    "quiz_restart": "テストを再開する",
     "questions": [
     {
       "q": "放課後、宿題が終わっていないことに気づいたらどうする？",

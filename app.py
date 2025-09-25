@@ -141,6 +141,15 @@ def start():
     """
     return render_template_string(html)
 
+@app.route("/quiz/restart")
+def quiz_restart():
+    # 清空答题记录和索引
+    session.pop('current_index', None)
+    session.pop('answers', None)
+    session.pop('shuffled_questions', None)
+    # 跳转回 quiz 函数，由 quiz 函数自动生成第 1 题
+    return redirect(url_for('quiz'))
+
 # 测试题页
 @app.route("/quiz")
 def quiz():
@@ -213,7 +222,7 @@ def checkout():
         <h3>Stripe 信用卡支付</h3>
         <p>{text['checkout_desc_stripe'].format(amount=1000)}</p>
         <a href="{session_stripe.url}"><button>{text['checkout_btn_stripe']}</button></a>
-        <p style="margin-top:20px;"><a href="{url_for('quiz')}">{text['checkout_back_quiz']}</a></p>
+        <p style="margin-top:20px;"><a href="{url_for('qquiz_restartuiz')}">{text['quiz_restart']}</a></p>
     </div>
     """
     return render_template_string(html)
