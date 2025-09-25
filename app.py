@@ -25,15 +25,65 @@ with open("lang.json","r",encoding="utf-8") as f:
     LANG_DATA = json.load(f)
 
 BASE_CSS_JS = """
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <style>
-body {font-family: Arial, sans-serif; background:#f2f2f2; text-align:center; padding:20px;}
-.card {background:white; padding:20px; margin:auto; max-width:600px; width:95%; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); opacity:1; transition:opacity 0.3s;}
-button.option-btn, button.start-btn {padding:15px 20px; margin:10px 0; border:none; border-radius:5px; background:#eee; cursor:pointer; font-size:16px; display:block; width:100%; transition: all 0.2s;}
-button.option-btn:hover, button.start-btn:hover {background:#ddd;}
-button.option-btn.selected {background:#4CAF50; color:white; transform: scale(1.03);}
-.progress {background:#ddd; border-radius:5px; overflow:hidden; margin-bottom:15px; height:20px;}
-.progress-bar {height:20px; background:#4CAF50; width:0%; transition: width 0.3s;}
-@media (max-width: 600px){.card{padding:15px;} button.option-btn, button.start-btn{font-size:14px;}}
+body {
+    font-family: Arial, sans-serif; 
+    background:#f2f2f2; 
+    text-align:center; 
+    padding:20px;
+    }
+    
+.card {
+    background:white; 
+    padding:20px; 
+    margin:auto; max-width:600px; 
+    width:95%; border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1); 
+    opacity:1; transition:opacity 0.3s;
+    }
+button.option-btn, button.start-btn {
+    padding:15px 20px; 
+    margin:10px 0;
+    border:none;
+    border-radius:5px; 
+    background:#eee; 
+    cursor:pointer; 
+    font-size:16px; 
+    display:block; 
+    width:100%; 
+    transition: all 0.2s;
+    }
+button.option-btn:hover, button.start-btn:hover {
+    background:#ddd;
+    }
+button.option-btn.selected {
+    background:#4CAF50; 
+    color:white; 
+    transform: scale(1.03);}
+.progress {
+    background:#ddd; 
+    border-radius:5px; 
+    overflow:hidden; 
+    margin-bottom:15px; 
+    height:20px;
+    }
+.progress-bar {
+    height:20px;
+    background:#4CAF50; 
+    width:0%; 
+    transition: width 0.3s;}
+@media (max-width: 600px)
+    {
+    .card{
+        padding:15px;
+        } 
+    button.option-btn, button.start-btn{
+        font-size:14px;}
+    }
 </style>
 <script>
 function selectOption(btn, answer){
@@ -144,7 +194,7 @@ def checkout():
                 'price_data': {
                     'currency': 'jpy',
                     'product_data': {'name': 'MBTI 测试'},
-                    'unit_amount': 1000,  # 测试金额：1000日元
+                    'unit_amount': 1000,  
                 },
                 'quantity': 1,
             }],
@@ -240,5 +290,4 @@ def success():
 
 if __name__=="__main__":
     app.run(debug=True)
-
 
