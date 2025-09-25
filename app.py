@@ -2,8 +2,6 @@ from flask import Flask, render_template_string, request, redirect, url_for, ses
 import os, json
 from dotenv import load_dotenv
 import stripe
-import requests
-import uuid
 import random
 
 load_dotenv()  # 读取 .env
@@ -11,14 +9,14 @@ load_dotenv()  # 读取 .env
 STRIPE_PUBLIC_KEY = os.getenv("STRIPE_PUBLIC_KEY")
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
 
-
 stripe.api_key = STRIPE_SECRET_KEY
 if not STRIPE_SECRET_KEY:
     raise ValueError("❌ Stripe Secret Key 没有加载成功，请检查 .env 文件！")
 else:
-    print("✅ Stripe Secret Key 已加载:", STRIPE_SECRET_KEY[:8] + "..." )
+    print("✅ Stripe Secret Key 已加载:", STRIPE_SECRET_KEY[:8] + "...")
+
 app = Flask(__name__)
-app.secret_key = os.urandom(24)  # 可以用随机生成代替硬编码
+app.secret_key = os.urandom(24)
 
 # 读取多语言文件
 with open("lang.json","r",encoding="utf-8") as f:
@@ -30,60 +28,14 @@ BASE_CSS_JS = """
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
-body {
-    font-family: Arial, sans-serif; 
-    background:#f2f2f2; 
-    text-align:center; 
-    padding:20px;
-    }
-    
-.card {
-    background:white; 
-    padding:20px; 
-    margin:auto; max-width:600px; 
-    width:95%; border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1); 
-    opacity:1; transition:opacity 0.3s;
-    }
-button.option-btn, button.start-btn {
-    padding:15px 20px; 
-    margin:10px 0;
-    border:none;
-    border-radius:5px; 
-    background:#eee; 
-    cursor:pointer; 
-    font-size:16px; 
-    display:block; 
-    width:100%; 
-    transition: all 0.2s;
-    }
-button.option-btn:hover, button.start-btn:hover {
-    background:#ddd;
-    }
-button.option-btn.selected {
-    background:#4CAF50; 
-    color:white; 
-    transform: scale(1.03);}
-.progress {
-    background:#ddd; 
-    border-radius:5px; 
-    overflow:hidden; 
-    margin-bottom:15px; 
-    height:20px;
-    }
-.progress-bar {
-    height:20px;
-    background:#4CAF50; 
-    width:0%; 
-    transition: width 0.3s;}
-@media (max-width: 600px)
-    {
-    .card{
-        padding:15px;
-        } 
-    button.option-btn, button.start-btn{
-        font-size:14px;}
-    }
+body {font-family: Arial, sans-serif; background:#f2f2f2; text-align:center; padding:20px;}
+.card {background:white; padding:20px; margin:auto; max-width:600px; width:95%; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); opacity:1; transition:opacity 0.3s;}
+button.option-btn, button.start-btn {padding:15px 20px; margin:10px 0; border:none; border-radius:5px; background:#eee; cursor:pointer; font-size:16px; display:block; width:100%; transition: all 0.2s;}
+button.option-btn:hover, button.start-btn:hover {background:#ddd;}
+button.option-btn.selected {background:#4CAF50; color:white; transform: scale(1.03);}
+.progress {background:#ddd; border-radius:5px; overflow:hidden; margin-bottom:15px; height:20px;}
+.progress-bar {height:20px; background:#4CAF50; width:0%; transition: width 0.3s;}
+@media (max-width: 600px){.card{padding:15px;} button.option-btn, button.start-btn{font-size:14px;}}
 </style>
 <script>
 function selectOption(btn, answer){
@@ -117,14 +69,12 @@ function startCountdown(){
 </script>
 """
 
-# 根据浏览器语言或默认 zh
 def get_lang():
     lang = request.accept_languages.best_match(['zh','en','ja'])
     if not lang:
         lang = 'en'
     return lang
 
-# 开始页
 @app.route("/")
 def start():
     lang = get_lang()
@@ -143,27 +93,27 @@ def start():
 
 @app.route("/quiz/restart")
 def quiz_restart():
-    # 清空答题记录和索引
     session.pop('current_index', None)
     session.pop('answers', None)
     session.pop('shuffled_questions', None)
-    # 跳转回 quiz 函数，由 quiz 函数自动生成第 1 题
     return redirect(url_for('quiz'))
 
-# 测试题页
 @app.route("/quiz")
 def quiz():
     lang = get_lang()
     text = LANG_DATA[lang]
 
-    if 'current_index' not in session:
+    # 空题库保护
+    if 'current_index' not in session or 'shuffled_questions' not in session:
         session['current_index'] = 0
         session['answers'] = []
         session['shuffled_questions'] = random.sample(text['questions'], len(text['questions']))
 
-    idx = session['current_index']
     questions_shuffled = session['shuffled_questions']
+    if not questions_shuffled:
+        return "❌ 当前题库为空，请检查 lang.json"
 
+    idx = session['current_index']
     ans = request.args.get("answer")
     if ans:
         session['answers'].append(ans)
@@ -190,12 +140,10 @@ def quiz():
         html += "</div>"
         return render_template_string(html)
 
-# 支付模拟页
 @app.route("/checkout")
 def checkout():
     lang = get_lang()
     text = LANG_DATA[lang]
-    # 创建 Stripe 测试支付 Session
     try:
         session_stripe = stripe.checkout.Session.create(
             payment_method_types=['card'],
@@ -203,7 +151,7 @@ def checkout():
                 'price_data': {
                     'currency': 'jpy',
                     'product_data': {'name': 'MBTI 测试'},
-                    'unit_amount': 1000,  
+                    'unit_amount': 1000,
                 },
                 'quantity': 1,
             }],
@@ -214,7 +162,6 @@ def checkout():
     except Exception as e:
         return str(e)
 
-    
     html = f"""
     {BASE_CSS_JS}
     <div class="card">
@@ -222,32 +169,30 @@ def checkout():
         <h3>Stripe 信用卡支付</h3>
         <p>{text['checkout_desc_stripe'].format(amount=1000)}</p>
         <a href="{session_stripe.url}"><button>{text['checkout_btn_stripe']}</button></a>
-        <p style="margin-top:20px;"><a href="{url_for('qquiz_restartuiz')}">{text['quiz_restart']}</a></p>
+        <p style="margin-top:20px;"><a href="{url_for('quiz_restart')}">{text['quiz_restart']}</a></p>
     </div>
     """
     return render_template_string(html)
-    
 
-# 结果页
 @app.route("/payment_failed")
 def payment_failed():
     lang = get_lang()
     text = LANG_DATA[lang]
     html = f"""
-        {BASE_CSS_JS}
-        <div class='card'>
-            <h2>{text['payment_failed_title']}</h2>
-            <p>{text['payment_failed_desc']}</p>
-            <a href="{url_for('checkout')}"><button>{text['payment_failed_btn']}</button></a>
-        </div>
-        """
+    {BASE_CSS_JS}
+    <div class='card'>
+        <h2>{text['payment_failed_title']}</h2>
+        <p>{text['payment_failed_desc']}</p>
+        <a href="{url_for('checkout')}"><button>{text['payment_failed_btn']}</button></a>
+    </div>
+    """
     return render_template_string(html)
+
 @app.route("/success")
 def success():
     lang = get_lang()
     text = LANG_DATA[lang]
-    # 这里可以根据支付测试逻辑判断是否支付成功
-    payment_status = request.args.get("status", "success")  # 测试时用 ?status=success 或 fail
+    payment_status = request.args.get("status", "success")
     if payment_status != "success":
         return render_template_string(f"""
         {BASE_CSS_JS}
@@ -258,9 +203,9 @@ def success():
         </div>
         """)
 
-    answers = session.get('answers', [])
+    answers = session.get('answers')
     if not answers:
-        return redirect(url_for("quiz"))
+        return redirect(url_for("quiz_restart"))
 
     scores = {"E":0,"I":0,"N":0,"S":0,"T":0,"F":0,"J":0,"P":0}
     for ans in answers:
@@ -292,11 +237,10 @@ def success():
         <h2>{text['success_title']}</h2>
         <p>{text['success_type'].format(result=result_type)}</p>
         <p>{description}</p>
-        <a href="{url_for('quiz')}"><button>{text['success_btn']}</button></a>
+        <a href="{url_for('quiz_restart')}"><button>{text['success_btn']}</button></a>
     </div>
     """
     return render_template_string(html)
 
 if __name__=="__main__":
     app.run(debug=True)
-
